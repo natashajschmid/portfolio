@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+// import bootstrap
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// import CardsOld from './components/CardsOld';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  <HashRouter>
+     <App />
+  </HashRouter>,
   document.getElementById('root')
 );
 
