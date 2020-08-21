@@ -5,9 +5,11 @@ import AOS from 'aos';
 
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Main from './Main.js';
+import EqualiCare from './projects/EqualiCare';
 import Work from './pages/Work.js';
 import About from './pages/About.js';
 import Resume from './pages/Resume.js';
+import Footer from './Footer.js';
 
 class App extends Component {
   componentDidMount() {
@@ -29,6 +31,10 @@ class App extends Component {
           exact path="/"
           component={Main}
         />
+        <Route 
+          path="/equalicare"
+          component={EqualiCare}
+        />
         <Route
           exact path="/about"
           component={About}
@@ -37,9 +43,7 @@ class App extends Component {
           exact path="/resume"
           component={Resume}
         />
-
-        {/* TODO: ADD IN FOOTER */}
-
+        <Footer />
       </div>
 
       // <BrowserRouter>

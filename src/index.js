@@ -7,7 +7,6 @@ import * as serviceWorker from './serviceWorker';
 
 // import bootstrap
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-// import CardsOld from './components/CardsOld';
 
 ReactDOM.render(
   // <React.StrictMode>

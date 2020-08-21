@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Project from './Project';
+import Project from '../Project';
 
 import equalicare from '../img/equalicareCover.png';
 import proxxmu from '../img/proxxmuCover.png';

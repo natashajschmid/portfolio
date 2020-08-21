@@ -52,7 +52,8 @@
   line-height: 36px;
 }
 
-.header .navigation .navigation-sub .work, .about {
+.header .navigation .navigation-sub .work,
+.header .navigation .navigation-sub .about {
   padding-right: 40px;
 }
 
@@ -63,8 +64,144 @@
 }
 
 
+/* PROJECT HEADER */
+
+.header-project {
+  /* TAG: margins */
+  /* width: 784px; */
+  width: 1000px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 115px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.header-project .navigation {
+  width: 100%;
+  display: flex;
+}
+
+.header-project .navigation .navigation-sub .inactive {
+  color: #BBBBBB;
+}
+
+.header-project .navigation div a:hover {
+  color: black !important;
+}
+
+.header-project .navigation .navigation-sub div a,
+.header-project .navigation .natasha a {
+  text-decoration: none;
+  /* transition: color 0.2s;
+  text-shadow: 0px 0px 4px rgba(0,0,0,0.5); */
+}
+
+/* .header-project .navigation .navigation-sub div a:hover,
+.header-project .navigation .natasha a:hover {
+  color: white !important;
+} */
+
+/* .header-project .navigation .navigation-sub div a:visited,
+.header-project .navigation .natasha a:visited {
+  color: inherit;
+} */
+
+.header-project .navigation .natasha a:visited {
+  color: black;
+}
+
+.header-project .navigation-sub {
+  width: 276px;
+  font-size: 22px;
+  display: flex;
+}
+
+.header-project .navigation .natasha {
+  font-size: 26px;
+  width: calc(100% - 276px);
+  line-height: 36px;
+}
+
+.header-project .navigation .navigation-sub .work,
+.header-project .navigation .navigation-sub .about {
+  padding-right: 40px;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer .footer-statement{
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0px auto 11px auto;
+  width: 100%;
+}
+
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer .social-links .social {
+  background-color: #000000;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.footer .social-links .social-last {
+  background-color: #000000;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+}
+
+.footer .social-links .social .linkedin {
+  max-width: 36px;
+  max-height: 36px;
+  padding: 11px 8px 8px 9px;
+
+}
+
+.footer .social-links .social-last .email {
+  max-width: 36px;
+  max-height: 36px;
+  padding: 13px 8px 8px 8px;
+}
+
+
+.footer .footer-copyright {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #B1B1B1;
+  line-height: 36px;
+  margin: 20px auto 0px auto;
+  width: 100%;
+}
+
 
 /* MAIN PAGE */
+
+/* Projects List */
 
 .projects {
   width: 100%;
@@ -74,6 +211,7 @@
 }
 
 .intro {
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 26px;
   font-weight: 600;
   color: grey;
@@ -86,16 +224,30 @@
   color: black;
 }
 
-/* Project Thumbnail Cards */
+/* Individual Project (Cards) */
+.project {
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: none;
+}
 
 .card {
   /* width: 20rem; */
   width: 1000px;
   margin-top: 85px;
+  /* box-shadow: 0 4px 10px 0 rgba(57,86,113,0.24); */
 }
 
-.card:hover {
+/* .card:hover {
   box-shadow: 5px 10px 20px 1px rgba(0,0,0,0.253) !important;
+} */
+
+.card-title {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0px 40px;
 }
 
 .card-body {
@@ -103,8 +255,15 @@
 }
 
 .card-text {
-  font-size: 0.9rem;
-  padding: 0.4rem 1.9rem;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 40px;
+}
+
+.card-body .btn {
+  margin-left: 40px;
+  font-weight: 600;
+
 }
 
 /* .container-fluid .row  {
@@ -117,9 +276,134 @@
 
 .card-img-top {
   transform: scale(1);
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
 
 .card-img-top:hover {
-  transform: scale(1.8);
+  transform: scale(1.05);
+}
+
+
+/* ABOUT PAGE */
+
+.about-image {
+  /* max-width: 1000px; */
+  /* max-width: 500px; */
+  width: 512px;
+  height: 596px;
+  box-shadow: 0px 0px 10px rgba(224, 224, 224, 0.5);
+  display: flex;
+}
+
+.about-content {
+  /* margin-top: 50px; */
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 30px;
+}
+
+.about-title {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+
+
+/* RESUME PAGE */
+
+.resume-content {
+  width: 100%;
+  margin-top: 60px;
+  /* display: flex; */
+}
+
+.resume-content a {
+  text-decoration: none;
+  width: 320px;
+  height: 50px;
+  color: #75A6D6;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 1px;
+  background-color: white;
+  border: 2px solid #75A6D6;
+  cursor: pointer;
+  border-radius: 38px;
+  transition: all 0.4s;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-content a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #75A6D6;
+  border: 2px solid #75A6D6;
+}
+
+.resume-content img {
+  /* max-width: 1000px; */
+  width: 100%;
+  /* display: flex; */
+}
+
+
+/* PROJECT PAGE - EQUALICARE */
+
+.equalicare .navigation-sub {
+  z-index: 10;
+}
+
+.equalicare .cover {
+  width: 100%;
+  height: 540px;
+  /* position: relative; */
+}
+
+.project-info {
+  /* TAG: margins */
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  top: -106px;
+  z-index: 2;
+}
+
+.project-info .project-title {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 40px;
+  color: black;
+  line-height: 46px;
+  margin-top: 12px;
+}
+
+.project-details {
+  font-size: 16px;
+  color: #6E6C79;
+  line-height: 26px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-details-title {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.project-details-text {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 60px;
 }
