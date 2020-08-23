@@ -10,6 +10,7 @@ import Work from './pages/Work.js';
 import About from './pages/About.js';
 import Resume from './pages/Resume.js';
 import Footer from './Footer.js';
+import ProjectNav from './projects/ProjectNav';
 
 class App extends Component {
   componentDidMount() {
@@ -25,7 +26,6 @@ class App extends Component {
     AOS.init();
 
     return (
-
       <div className="App">
         <Route
           exact path="/"

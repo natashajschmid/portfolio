@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
+// import Footer from './Footer';
 
 const Project = (props) => {
 // class Project extends Component {}

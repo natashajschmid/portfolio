@@ -5,7 +5,6 @@ import '../App.css';
 import profile from '../img/profile.png';
 import profile2 from '../img/profile2.png';
 import profile3 from '../img/profile3.png';
-
  
 class About extends Component {
   state = {
@@ -53,7 +52,7 @@ class About extends Component {
           </div>
         </section>
       </div>
-    )
+    );
   }
 }
  
