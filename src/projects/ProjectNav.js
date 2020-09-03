@@ -24,34 +24,36 @@ class ProjectNav extends Component {
             </div>
         </div>
       </div>
-      <div className="project-info">
-        <img src={this.props.hero} alt="Hero" className="project-hero" />
-        <div className="project-title">{this.props.title}</div>
+      <img src={this.props.hero} alt="Hero" className="project-hero" />
+      <div className="project-info-container">
+        <div className="project-info">
+          <div className="project-title">{this.props.title}</div>
 
-        <div className="project-header-container">
-          <div className="project-details col-7">
-            <div className="project-details-description row">{this.props.description}</div>
-            {/* TODO: fix this formatting */}
-            <div className="project-details-description row hide">.</div>
+          <div className="project-header-container">
+            <div className="project-details col-7">
+              <div className="project-details-description row">{this.props.description}</div>
+              {/* TODO: fix this formatting */}
+              <div className="project-details-description row hide">.</div>
+            </div>
+
+            <div className="project-details col-1">
+              <div className="project-details-title row">Date</div>
+              <div className="project-details-title row">Duration</div>
+              <div className="project-details-title row">Team</div>
+              <div className="project-details-title row hide">Team</div>
+              <div className="project-details-title row">Role</div>
+            </div>
+
+            <div className="project-details col-4">
+              <div className="project-details-text row">{this.props.date}</div>
+              <div className="project-details-text row">{this.props.duration}</div>
+              <div className="project-details-text row">{this.props.team}</div>
+              <div className="project-details-text row">{this.props.role}</div>
+            </div>
           </div>
 
-          <div className="project-details col-1">
-            <div className="project-details-title row">Date</div>
-            <div className="project-details-title row">Duration</div>
-            <div className="project-details-title row">Team</div>
-            <div className="project-details-title row hide">Team</div>
-            <div className="project-details-title row">Role</div>
-          </div>
 
-          <div className="project-details col-4">
-            <div className="project-details-text row">{this.props.date}</div>
-            <div className="project-details-text row">{this.props.duration}</div>
-            <div className="project-details-text row">{this.props.team}</div>
-            <div className="project-details-text row">{this.props.role}</div>
-          </div>
         </div>
-
-
       </div>
     </div>
     );

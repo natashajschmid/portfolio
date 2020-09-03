@@ -5,7 +5,7 @@ import './App.css';
 // import ProjectOld from './components/ProjectOld';
 import Project from './Project';
 
-import equalicare from './img/equalicareCover.png';
+import equalicare from './img/equalicare-img01.png';
 import proxxmu from './img/proxxmuCover.png';
 import recoverycafe from './img/recoverycafeCover.png';
 
