@@ -5,6 +5,7 @@ import './App.css';
 // import ProjectOld from './components/ProjectOld';
 import Project from './Project';
 
+import cartoonProfile from './img/cartoon-profile.png';
 import equalicare from './img/equalicare-img01.png';
 import proxxmu from './img/proxxmuCover.png';
 import recoverycafe from './img/recoverycafeCover.png';
@@ -35,9 +36,12 @@ class Main extends Component {
           </div>
         </section>
         <section className="intro">
-            Hello!
-            <div className="intro-name">I'm Natasha.</div>
-            Human Centered Design & Engineering<br/> student at the University of Washington
+            <div className="intro-text">
+              Hello!
+              <div className="intro-name">I'm Natasha.</div>
+              Human Centered Design & Engineering<br/> student at the University of Washington
+            </div>
+            <img src={cartoonProfile} alt="cartoon drawing of myself" className="intro-image" />
         </section>
         <section className="projects">
           {/* PROJECTS */}

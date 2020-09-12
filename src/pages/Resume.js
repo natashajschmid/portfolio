@@ -32,9 +32,9 @@ class Resume extends Component {
           </div>
         </section>
         <section className="resume-content">
-          {/* (1) open resume in new page, (2) download resume */}
-          {/* <a href={resumepdf} target="_blank" open className="resume-download-button">Download Resume PDF</a> */}
+          {/* (1) download resume PDF, (2) open resume in new page */}
           <a href={resumepdf} download className="resume-download-button">Download Resume PDF</a>
+          <a href={resumepdf} target="_blank" open className="resume-open-button">Open Resume in New Page</a>
           <img src={resumepng} alt="Natasha Schmid Resume" className="resume-image" />
         </section>
       </div>
