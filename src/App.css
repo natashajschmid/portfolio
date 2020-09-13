@@ -5,6 +5,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
 /* font-family: 'Playfair Display', serif; */
 
+/* Definte Custom Fonts */
+@font-face {
+  font-family: 'circular-std-black';
+  src: url('./font/CircularStd-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'circular-std-black-italic';
+  src: url('./font/CircularStd-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'circular-std-bold';
+  src: url('./font/CircularStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'circular-std-bold-italic';
+  src: url('./font/CircularStd-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'circular-std-medium';
+  src: url('./font/CircularStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'circular-std-medium-italic';
+  src: url('./font/CircularStd-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'circular-std-book';
+  src: url('./font/CircularStd-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'circular-std-book-italic';
+  src: url('./font/CircularStd-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+/* STYLES */
+
 .body {
   /* TAG: change page margins here */
   /* width: 784px; */
@@ -16,10 +77,11 @@
 
 .header {
   width: 100%;
-  margin-top: 115px;
-  margin-bottom: 76px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700; */
+  font-family: circular-std-medium, Arial, sans-serif;
 }
 
 .header .navigation {
@@ -84,8 +146,9 @@
 }
 
 .footer .footer-statement{
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 700;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700; */
+  font-family: circular-std-medium, Arial, sans-serif;
   font-size: 24px;
   line-height: 28px;
   margin: 0px auto 11px auto;
@@ -129,8 +192,9 @@
 
 
 .footer .footer-copyright {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 600;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 600; */
+  font-family: circular-std-book, Arial, sans-serif;
   font-size: 16px;
   color: #B1B1B1;
   line-height: 36px;
@@ -145,15 +209,17 @@
 
 .projects {
   width: 100%;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  /* font-family: 'Open Sans', 'Arial', sans-serif; */
+  font-family: circular-std-medium, Arial, sans-serif;
   display: flex;
   justify-content: space-between;
 }
 
 .intro {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-size: 26px;
-  font-weight: 600;
+  /* font-family: 'Open Sans', 'Arial', sans-serif; */
+  /* font-weight: 600; */
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 24px;
   color: grey;
   display: grid;
   grid-template-columns: 65% 35%;
@@ -166,9 +232,12 @@
 
 .intro .intro-name {
   font-family: 'Playfair Display', serif;
-  font-size: 80px;
   font-weight: 800;
   color: black;
+  /* font-family: circular-std-black, Arial, sans-serif;
+  color: #75A6D6; */
+  font-size: 75px;
+
 }
 
 .intro .intro-image {
@@ -190,6 +259,8 @@
   /* width: 20rem; */
   width: 1000px;
   margin-top: 85px;
+  border: none;
+  /* border-radius: 50%; */
   /* box-shadow: 0 4px 10px 0 rgba(57,86,113,0.24); */
 }
 
@@ -198,26 +269,87 @@
 } */
 
 .card-title {
+  font-family: circular-std-bold, Arial, sans-serif;
   font-size: 36px;
-  font-weight: 700;
-  padding: 0px 40px;
+  /* font-weight: 700; */
+  padding: 0px 0px 0px 25px;
 }
 
 .card-body {
-  padding: 3rem 0 !important;
+  /* padding: 3rem 0 !important; */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card-text {
   font-weight: 500;
   font-size: 18px;
-  padding: 10px 40px;
+  padding: 10px 0px 10px 25px;
 }
 
-.card-body .btn {
-  margin-left: 40px;
+.card-line {
+  /* background: #000000; */
+  height: 2px;
+}
+
+.card-line-top {
+  margin-bottom: 80px;
+}
+
+/* .card-line-bottom {
+  padding-top: 100px;
+} */
+
+.card-body .view-btn {
+  margin-left: 20px;
   font-weight: 600;
-
+  text-decoration: none;
+  width: 190px;
+  height: 50px;
+  /* color: #000000;   set in STATE */
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700; */
+  font-family: circular-std-bold, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: white;
+  border: 2px solid #000000;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.25s;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* .card-body .btn:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #6FCAD2;
+  background-color: #000000;
+  border: 2px solid #6FCAD2;
+} */
+
+.button-hover-0 {
+  color: white !important;
+  background-color: #6FCAD2 !important;
+  border: 2px solid #6FCAD2 !important;
+}
+
+.button-hover-1 {
+  color: white !important;
+  background-color: #FF977C !important;
+  border: 2px solid #FF977C !important;
+}
+
+.button-hover-2 {
+  color: white !important;
+  background-color: #DFBBA6 !important;
+  border: 2px solid #DFBBA6 !important;
+}
+
+
 
 /* .container-fluid .row  {
   padding-top: 6rem;
@@ -233,8 +365,10 @@
 }
 
 .card-img-top:hover {
-  transform: scale(1.05);
+  /* if "scale" is changed, chang in Project.js file too */
+  transform: scale(1.05) !important;
 }
+
 
 
 /* ABOUT PAGE */
@@ -250,17 +384,19 @@
 
 .about-content {
   /* margin-top: 50px; */
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 30px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 500; */
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
   padding-left: 30px;
 }
 
 .about-title {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700; */
+  font-family: circular-std-bold, Arial, sans-serif;
+  font-size: 20px;
 }
 
 
@@ -275,12 +411,13 @@
 
 .resume-content a {
   text-decoration: none;
-  width: 380px;
+  width: 280px;
   height: 50px;
   color: #75A6D6;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 21px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700; */
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 16px;
   letter-spacing: 1px;
   background-color: white;
   border: 2px solid #75A6D6;
@@ -304,8 +441,8 @@
 
 .resume-content img {
   /* max-width: 1000px; */
-  width: 100%;
   /* display: flex; */
+  width: 100%;
 }
 
 
@@ -325,14 +462,15 @@
 
 .project-info-container {
   width: 100%;
-  padding-top: 85px;
-  padding-bottom: 100px;
+  padding-top: 65px;
+  padding-bottom: 80px;
   background-color: #F8F8F8;
 }
 
 .project-info {
   /* TAG: margins */
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  /* font-family: 'Open Sans', 'Arial', sans-serif; */
+  font-family: circular-std-book, Arial, sans-serif;
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -341,8 +479,9 @@
 }
 
 .project-info .project-title {
-  font-weight: 700;
-  font-size: 50px;
+  font-family: circular-std-bold, Arial, sans-serif;
+  /* font-weight: 700; */
+  font-size: 40px;
   color: black;
   line-height: 46px;
   margin-top: 12px;
@@ -360,21 +499,22 @@
 }
 
 .project-details-title {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 600; */
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 18px;
   line-height: 36px;
 }
 
 .project-details .hide {
-
   visibility: hidden;
 }
 
 .project-details-text {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400; */
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
   padding-left: 30px;
   /* position: absolute; */
   /* margin-top: 40px; */
@@ -382,22 +522,23 @@
 }
 
 .project-details-description {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 36px;
   /* TAG: ProjectNav spacing issues */
   padding-right: 40px;
 }
 
 .content-title {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 45px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700; */
+  font-family: circular-std-bold, Arial, sans-serif;
+  font-size: 40px;
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   text-align: left;
   position: relative;
 }
@@ -410,7 +551,7 @@
   background: #EEEEEE;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 55%;
   z-index: -2;
 }
 
@@ -422,6 +563,7 @@
 }
 
 .content-title .header {
+  font-family: circular-std-bold, Arial, sans-serif;
   background-color: white;
   padding-right: 25px;
 }
@@ -440,13 +582,14 @@
 } */
 
 .content-subtitle {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700; */
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 25px;
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 10px;
   /* color: #12B7BB; */
   color: #666666;
@@ -457,13 +600,16 @@
 } */
 
 .content {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400; */
+  font-family: circular-std-book, Arial, sans-serif;
+  /* font-size: 22px; */
+  /* line-height: 36px; */
+  font-size: 18px;
+  line-height: 26px;
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 36px;
 }
 
 /* Project Bottom */
@@ -476,8 +622,9 @@
 }
 
 .thanks-text {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 700;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 700; */
+  font-family: circular-std-black, Arial, sans-serif;
   font-size: 24px;
   line-height: 28px;
   color: white;
@@ -496,7 +643,7 @@
   z-index: 1;
   display: flex;
   width: 100%;
-  /* height: 40px; */
+  height: 40px;
   background: darkgrey;
   list-style: none;
   padding-inline-start: 0px;
@@ -509,14 +656,15 @@
   margin: 0 35px;
   padding: 8px;
   color: white;
-  font-weight: 500;
+  font-family: circular-std-medium, Arial, sans-serif;
+  /* font-weight: 500; */
   text-transform: uppercase;
 }
 
 
 .equalicare .scroll-item > .active{
   border-bottom: 4px solid white;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
   color: white;
   /* font-weight: 800; */
   text-decoration: none;
@@ -544,8 +692,7 @@
 } */
 
 .equalicare bold {
-  font-weight: 600;
-  /* font-weight: 700; */
+  font-family: circular-std-bold, Arial, sans-serif;
 }
 
 .equalicare .interviews {
@@ -583,15 +730,14 @@
   display: grid;
   /* justify-content: center; */
   padding: 30px 0px;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 30% 60%;
   grid-gap: 55px;
   justify-items: center;
 }
 
 .equalicare .survey-icon .icon-title  {
-  font-size: 24px;
-  font-weight: 700;
-  /* text-align: center; */
+  font-family: circular-std-bold, Arial, sans-serif;
+  font-size: 20px;
 }
 
 .equalicare .survey-img {
@@ -648,7 +794,7 @@
   background-color: #F8F8F8;
   /* background-color: #6FCAD2; */
   width: 100%;
-  padding: 120px 0px;
+  padding: 80px 0px;
 }
 
 .equalicare .problem-framing .stage-grey .content-subtitle {
@@ -717,12 +863,13 @@
   max-width: 500px;
   margin: auto;
   color: black;
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 500;
-  font-size: 22px;
+  /* font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 500; */
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 36px;
 }
 
 .equalicare .stage-teal.solution {
@@ -764,7 +911,7 @@
 
 .equalicare .design .design-sys {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 35% 60%;
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -778,6 +925,11 @@
 
 .equalicare .design .design-sys .image-text {
   max-width: 100%;
+  line-height: 26px;
+}
+
+.equalicare .design .design-sys .image-text a {
+  text-decoration: none;
 }
 
 .equalicare .design .prototypes {
@@ -789,15 +941,15 @@
 .equalicare .prototype {
   position: relative;
   width: 100%;
-  height: 850px;
+  height: 680px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .equalicare .left .image {
-  width: 334px;
-  height: 725px;
+  width: 250px;
+  height: 544px;
   margin: 0;
   position: absolute;
   top: 68px;
@@ -807,8 +959,8 @@
 }
 
 .equalicare .right .image {
-  width: 334px;
-  height: 725px;
+  width: 250px;
+  height: 544px;
   margin: 0;
   margin-bottom: 50px;
   position: absolute;
@@ -836,23 +988,25 @@
 }
 
 .equalicare .prototype .details .title {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-size: 32px;
-  font-weight: 600;
+  /* font-family: 'Open Sans', 'Arial', sans-serif; */
+  /* font-weight: 600; */
+  font-family: circular-std-bold, Arial, sans-serif;
+  font-size: 26px;
   padding-bottom: 20px;
 }
 
 .equalicare .prototype .details .description {
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-size: 22px;
-  font-weight: 400;
+  /* font-family: 'Open Sans', 'Arial', sans-serif; */
+  /* font-weight: 400; */
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
   /* line-height: 30px; */
 }
 
 .equalicare .prototype .description .pain-points {
   /* color: #12B7BB; */
   color: #00878B;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .equalicare .reflection .learned {

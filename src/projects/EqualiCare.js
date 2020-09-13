@@ -202,30 +202,30 @@ class EqualiCare extends Component {
             <div className="content">
               Based on our research findings, we created three personas that embody the primary (elderly immigrant), secondary (healthcare professional), and tertiary (family member) archetypes of our user group.<br/> <br/>
               <div className="personas">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                  <ol className="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                   </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src={persona1} alt="First slide" />
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <img className="d-block w-100" src={persona1} alt="First slide" />
                     </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src={persona2} alt="Second slide" />
+                    <div className="carousel-item">
+                      <img className="d-block w-100" src={persona2} alt="Second slide" />
                     </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100" src={persona3} alt="Third slide" />
+                    <div className="carousel-item">
+                      <img className="d-block w-100" src={persona3} alt="Third slide" />
                     </div>
                   </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
                   </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
                   </a>
                 </div>
               </div>
@@ -364,10 +364,10 @@ class EqualiCare extends Component {
               <div className="design-sys">
                 <img src={img17b} alt="design system" className="image" />
                 <div className="content image-text">
-                  <bold>Font</bold>
-                  <p>Fonts that are most suitable for accessibility should be clean and simple, while maintaining large size and contrast between texts. Lato fits all of the above. It is a modern, professional-looking, sans serif font that is easy to read and comfortable to the eyes. It also has many font weight options, which are needed to aid in establishing visual text hierarchy.</p>
+                  <br/><bold>Font</bold>
+                  <p>Fonts that are most suitable for accessibility should be clean and simple, while maintaining large size and contrast between texts. Lato fits all of the above. It is a modern, professional-looking, sans serif font that is easy to read and comfortable to the eyes. It also has many font weight options, which are needed to aid in establishing visual text hierarchy.</p> <br/>
                   <bold>Color</bold>
-                  <p>In deciding our color scheme, we first selected colors from the <a href="https://www.ichs.com/" target="_blank" open>ICHS</a> website because we communicated with them to determine the problems that need to be addressed. Then, we added a few others we felt were necessary to complete the palette. For instance, we used a dark grey for text rather than a harsher black. </p>
+                  <p>In deciding our color scheme, we first selected colors from the <a href="https://www.ichs.com/" target="_blank" open>International Community Health Services (ICHS)</a> website because we communicated with them to determine the problems that need to be addressed. Then, we added a few others we felt were necessary to complete the palette. For instance, we used a dark grey for text rather than a harsher black. </p>
                   <p>One thing we considered is that older people need contrast between the text and background. To address this, we incorporated  many different shades of teal and grey, to allow for dark text on a light shade or light text on a dark shade.</p>
                 </div>
               </div>
