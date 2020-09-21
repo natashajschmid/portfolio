@@ -32,9 +32,9 @@ class About extends Component {
           </div>
         </section>
         <section className="about row">
-          <img src={profile3} alt="Profile image" className="about-image col-6 px-0" />
+          <img src={profile3} alt="Profile image" className="about-image col-5 px-0" />
           
-          <div className="col-6">
+          <div className="col-6 px-0">
             <div className="about-content">
               <div>
                 Hi, I'm Natasha.<br/><br/><br/>
