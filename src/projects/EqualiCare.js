@@ -59,9 +59,6 @@ class EqualiCare extends Component {
             description="EqualiCare is a mobile medical app that provides universal quality healthcare without barriers. The app is designed for all users, but has a strong focus on accommodating the needs of elderly immigrants."
           />
         </div>
-        <div className="introduction">
-          {/* Fill this in later (introduction.overview) */}
-        </div>
         <ul className="nav-scroll">
         <li className="scroll-item">
             <NavScroll 
@@ -137,7 +134,13 @@ class EqualiCare extends Component {
           </li>
         </ul>
 
-        <div className="process-title">Process</div>
+        <div className="other-title">Introduction</div>
+        <div className="content">
+          <p>While brainstorming project problem spaces, my team members and I found that something we all had in common is immigrant grandparents living in the Unites States. Each time one of my grandparents has a doctor appointment, my mom assists them to act as an interpreter and translator. In our experience, this not only takes time, but can also result in miscommunication between the doctor and my grandparents. Regardless, this has become the healthcare norm for my family,  my group members, as well as countless others with elderly immigrant family members. </p>
+          <p>EqualiCare is a mobile application that aims to tackle this problem space and therefore, improve the quality of healthcare and treatment experiences for elderly immigrants living in the United States.</p>
+        </div>
+
+        <div className="other-title">Process</div>
         <div className="content process">
           <div className="process-header"><span className="process-number">01</span>Research</div>
           <div className="process-header"><span className="process-number">02</span>Problem Framing</div>
@@ -161,7 +164,7 @@ class EqualiCare extends Component {
           <div className="content-title"><span className="number">01</span><span className="header">Research</span></div>
           <div className="content-subtitle">Competitive Analysis</div>
           <div className="content">
-            We conducted a competitive analysis on existing solutions for improving the healthcare of elderly immigrants in the U.S. This enabled us to understand what is currently working and opportunities for improvement within our problem space. <br/>
+            We conducted a competitive analysis on existing solutions for improving the healthcare of elderly immigrants in the U.S. This enabled us to understand what is currently working and opportunities for improvement within our problem space. At the conclusion, we determined that all existing solutions are aware that there is a need for improved communication between immigrants and healthcare providers.<br/>
             <img src={compAnl} alt="table displaying competitive analysis findings" className="ca-table" />
           </div>
           <div className="content-subtitle">Interviews</div>
@@ -198,7 +201,8 @@ class EqualiCare extends Component {
 
           <div className="content-subtitle">Surveys</div>
           <div className="content">
-            <p>We distributed two separate surveys through Google Forms. One went out to family translators of elderly immigrants (10 responses) and the other to healthcare professionals (13 responses).</p>
+            <p>We distributed two separate surveys through Google Forms. One went out to <a target="_blank" href="https://docs.google.com/spreadsheets/d/1fSOU1hi9pGVrxmZKe60zyyt-xsY-xovF_971vLH7xrI/edit?usp=sharing">family translators</a> of elderly immigrants (10 responses) and the other to <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ik19n2RxKE9BqkyaD98q-R89fnpNzUpUpRrlc7hd-wY/edit?usp=sharing">healthcare professionals</a> (13 responses).</p>
+            [INSERT SURVEY QUOTE !!!!!!]
             <div className="survey">
               <div className="survey-icon">
                 <p className="icon-title">Family Translators</p>
@@ -222,7 +226,7 @@ class EqualiCare extends Component {
           <div className="content-subtitle personas">User Personas</div>
           <div className="content">
             Based on our research findings, we created three personas that embody the primary (elderly immigrant), secondary (healthcare professional), and tertiary (family member) archetypes of our user group.<br/> <br/>
-            <div className="personas">
+            <div className="slideshow">
               <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -291,30 +295,20 @@ class EqualiCare extends Component {
               Based on our user research findings, we began ideating on different possible solutions that address the design requirements. The considered solutions are summarized in the table below.
               <img src={img14} alt="considered solutions table summary" className="table" />
             </div>
-            <div className="content-subtitle">Selected Solution</div>
-            <div className="content">
-              We constructed a new solution that incorporates the core aspects of our 4 possible solutions listed above, extracting the most important elements of each that would combine for the best overall user experience. This combined solution focuses on increased communication between the patient and healthcare provider, through forms completed in their native language. There is also an emphasis on post-appointment care, through video tutorials and live chat options. <br/>
-            </div>
             <div className="stage-teal solution">
               <div className="sel-sol">
                 <img src={img15} alt="equalicare phone mockup" className="icon" />
-                <div className="icon-caption">
-                  <bold>Format:</bold> phone/tablet app <br/>
-                  • Accessible at home, available "on the go" <br/>
-                  • Does not completely take away from in-person appointments <br/>
-                  • Doctors and patients are both connected through a single platform
-                </div>
+                <ul className="icon-caption">
+                  <bold>Format:</bold> phone/tablet app
+                  <li>Accessible at home, available "on the go"</li>
+                  <li>Does not completely take away from in-person appointments</li>
+                  <li>Doctors and patients are both connected through a single platform</li>
+                </ul>
               </div>
-            </div>
-            <div className="content">
-              <div className="content-subtitle">App Usage Timeline</div>
-              <p>We aim to provide assistance throughout the entire healthcare process [ADD MORE EXPLANATION HERE]</p>
-              <img src={img16} alt="usage timeline graphic" className="timeline"/>
             </div>
             <div className="content-subtitle">Low Fidelity Wireframes</div>
             <div className="content">
-              We began early ideation with brainstorming sketches and low fidelity wireframes that address the design requirements and the core aspects of our selected solution. <br/> <br/>
-
+              Drawing inspiration from the outlined solutions considered, we began early ideation with brainstorming sketches and low fidelity wireframes that address the design requirements. In particular, we kept the unique needs of elderly immigrants in mind while approaching visual design elements. A major part of this was keeping in mind visual/aural disabilities, language differences, and technological literacy. <br/> <br/>
               <div className="lofi-wireframes">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
@@ -372,6 +366,15 @@ class EqualiCare extends Component {
                 </div>
               </div>
             </div>
+            <div className="content-subtitle">Selected Solution [[[change this phrasing???]</div>
+            <div className="content">
+              Ultimately, we constructed a solution that incorporates the core aspects of our 4 possible brainstormed solutions, extracting the most important elements of each that would combine for the best overall user experience. This combined solution focuses on increased communication between the patient and healthcare provider, through forms completed in their native language. There is also an emphasis on post-appointment care, through video tutorials and live chat options. <br/>
+            </div>
+            <div className="content">
+              <div className="content-subtitle">App Usage Timeline</div>
+              <p>We aim to provide assistance throughout the entire healthcare process [ADD MORE EXPLANATION HERE]</p>
+              <img src={img16} alt="usage timeline graphic" className="timeline"/>
+            </div>
         </section>
 
         <section className="design" id="design">
@@ -398,8 +401,10 @@ class EqualiCare extends Component {
                   <div className="description">
                     Users are introduced to EqualiCare through a series of screens, which allow them to customize language and text size preferences. They are also given an overview of the core application features.<br/> <br/>
                     <bold className="pain-points">Pain Points Solved</bold> <br/>
-                    • <bold>Accessible</bold> for elderly immigrants, through language, text size, and audio options. <br/>
-                    • User data is kept <bold>secure</bold> using login token provided by healthcare provider.
+                    <ul>
+                      <li><bold>Accessible</bold> for elderly immigrants, through language, text size, and audio options.</li>
+                      <li>User data is kept <bold>secure</bold> using login token provided by healthcare provider.</li>
+                    </ul>
                   </div>
                 </div>
                 <img src={img23} alt="onboarding prototype" className="image" />
@@ -409,9 +414,11 @@ class EqualiCare extends Component {
                   <div className="title">Schedule an Appointment</div>
                   <div className="description">
                     Scheduling appointments is easy and time efficient. After selecting an available date and time, users fill out pre-screening questions in their native language which will be translated and then sent to the doctor ahead of time. Based on the patient's responses, they may be provided with a predicted diagnosis determined from a constantly updating healthcare database. <br/> <br/>
-                    <bold className="pain-points">Pain Points Solved</bold> <br/>
-                    • Pre-screening promotes <bold>time efficiency</bold>, allowing patients to fill out forms in advance in their native language. <br/>
-                    • Drop-down suggestions for symptoms save <bold>time and effort</bold>.
+                    <bold className="pain-points">Pain Points Solved</bold>
+                    <ul>
+                      <li>Pre-screening promotes <bold>time efficiency</bold>, allowing patients to fill out forms in advance in their native language.</li>
+                      <li>Drop-down suggestions for symptoms save <bold>time and effort</bold>.</li>
+                    </ul>
                   </div>
                 </div>
                 <img src={img24} alt="make appointment prototype" className="image" />
@@ -422,8 +429,10 @@ class EqualiCare extends Component {
                   <div className="description">
                     At any point, whether the user is at home or on the go, they are able to access information on their current care, including their medical diagnosis and treatment plan (prescribed medications, dietary suggestions, etc). <br/> <br/>
                     <bold className="pain-points">Pain Points Solved</bold> <br/>
-                    • The technology is <bold>accessibile</bold> by accounting for possible hearing, visual, and technological disabilities, as well as language barriers. This is seen through the video tutorials with closed captioning and audio playback options. <br/>
-                    • Accessing treatment plans and medical information through EqualiCare is much more <bold>effective</bold> than the traditional method of printed documents. This information can be accessed at any time and in the patient's <bold>native language</bold>. This enables them to <bold>better comprehend their healthcare</bold> and not rely on the assistance of relatives as much.
+                    <ul>
+                      <li>The technology is <bold>accessibile</bold> by accounting for possible hearing, visual, and technological disabilities, as well as language barriers. This is seen through the video tutorials with closed captioning and audio playback options.</li>
+                      <li>Accessing treatment plans and medical information through EqualiCare is much more <bold>effective</bold> than the traditional method of printed documents. This information can be accessed at any time and in the patient's <bold>native language</bold>. This enables them to <bold>better comprehend their healthcare</bold> and not rely on the assistance of relatives as much.</li>
+                    </ul>
                   </div>
                 </div>
                 <img src={img25} alt="review current care prototype" className="image" />
@@ -434,8 +443,10 @@ class EqualiCare extends Component {
                   <div className="description">
                     If, at any point, the patient has a question for a doctor, they have many options to go about obtaining an answer, including sending a translated message, live chat, or calling a healthcare professional who speaks their native language.<br/> <br/>
                     <bold className="pain-points">Pain Points Solved</bold> <br/>
-                    • <bold>Thorough and honest</bold> communication, from information presented in the patient's native language and the ability to get in contact with a healthcare provider who speaks the same language and shares cultural context. <br/>
-                    • <bold>Time efficient</bold> through live chat and call options available 24/7 and access to audio recordings of previous calls.
+                    <ul>
+                      <li><bold>Thorough and honest</bold> communication, from information presented in the patient's native language and the ability to get in contact with a healthcare provider who speaks the same language and shares cultural context.</li>
+                      <li><bold>Time efficient</bold> through live chat and call options available 24/7 and access to audio recordings of previous calls.</li>
+                    </ul>
                   </div>
                 </div>
                 <img src={img26} alt="ask question prototype" className="image" />

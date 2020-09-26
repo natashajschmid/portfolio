@@ -149,7 +149,7 @@
   /* font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 700; */
   font-family: circular-std-medium, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   margin: 0px auto 11px auto;
   width: 100%;
@@ -195,7 +195,7 @@
   /* font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 600; */
   font-family: circular-std-book, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #B1B1B1;
   line-height: 36px;
   margin: 20px auto 0px auto;
@@ -335,14 +335,14 @@
 
 .button-hover-0 {
   color: white !important;
-  background-color: #6FCAD2 !important;
-  border: 2px solid #6FCAD2 !important;
+  background-color: #FF977C !important;
+  border: 2px solid #FF977C !important;
 }
 
 .button-hover-1 {
   color: white !important;
-  background-color: #FF977C !important;
-  border: 2px solid #FF977C !important;
+  background-color: #6FCAD2 !important;
+  border: 2px solid #6FCAD2 !important;
 }
 
 .button-hover-2 {
@@ -654,7 +654,7 @@ bold {
   font-family: circular-std-bold, Arial, sans-serif;
 }
 
-.process-title {
+.other-title {
   font-family: circular-std-bold, Arial, sans-serif;
   font-size: 40px;
   width: 1000px;
@@ -716,8 +716,8 @@ bold {
   /* font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 700; */
   font-family: circular-std-black, Arial, sans-serif;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
   color: white;
   width: 1000px;
   margin-left: auto;
@@ -771,53 +771,57 @@ bold {
 
 /* Project General - All */
 
-.content-subtitle.personas {
+.content-subtitle.slideshow {
   padding-top: 15px;
   padding-bottom: 30px;
 }
 
-.personas .carousel {
+.slideshow .carousel {
   margin-left: 75px;
   margin-right: 75px;
   /* margin-left: 100px;
   margin-right: 100px; */
 }
 
-.personas .carousel-control-prev {
+.slideshow .carousel-control-prev {
   margin-left: -100px;
 }
 
-.personas .carousel-control-next {
+.slideshow .carousel-control-next {
   margin-right: -100px;
 }
 
-.personas .carousel-control-prev-icon {
+.slideshow .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23666666' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
-.personas .carousel-control-next-icon {
+.slideshow .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23666666' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-.personas .carousel-indicators li {
+.slideshow .carousel-indicators {
+  bottom: -50px;
+}
+
+.slideshow .carousel-indicators li {
   /* make indicators dots */
   width: 10px;
   height: 10px;
   border-radius: 100%;
   margin-left: 7px;
-  margin-right: 7px;;
+  margin-right: 7px;
 }
 
-.personas .carousel-indicators .active {
+.slideshow .carousel-indicators .active {
   background-color: #666666;
 }
 
-.personas .carousel-indicators :not(.active):hover {
+.slideshow .carousel-indicators :not(.active):hover {
   /* background-color: #666666; */
   background-color: #000000;
 }
 
-.personas .carousel-indicators :not(.active) {
+.slideshow .carousel-indicators :not(.active) {
   background-color: lightgray;
 }
 
@@ -861,9 +865,17 @@ bold {
   padding: 15px 0px;
 }
 
+.proxxmu .research .stage-grey {
+  background-color: #F8F8F8;
+  /* background-color: #FAFAFA; */
+  width: 100%;
+  /* margin-top: 40px; */
+  padding: 80px 0px 120px 0px;
+}
+
 .equalicare .insights-list .insight-number {
+  font-family: circular-std-medium, Arial, sans-serif;
   font-size: 30px;
-  font-weight: 700;
   color: #12B7BB;
   display: flex;
   align-items: center;
@@ -1147,6 +1159,10 @@ bold {
   font-size: 22px;
 }
 
+.equalicare .prototype .description ul {
+  padding-left: 20px;
+}
+
 .equalicare .reflection .learned {
   width: 1000px;
   margin-left: auto;
@@ -1203,7 +1219,7 @@ bold {
 }
 
 .equalicare .next-steps .step-num {
-  font-family: circular-std-bold, Arial, sans-serif;
+  font-family: circular-std-medium, Arial, sans-serif;
   font-size: 45px;
   color: #12B7BB;
   display: flex;
@@ -1232,9 +1248,15 @@ bold {
   font-style: italic;
 }
 
+.proxxmu .research .interview-img {
+  width: 80%;
+  display: block;
+  margin: 40px auto 55px auto;
+}
+
 .proxxmu .insights-list .insight-number {
+  font-family: circular-std-medium, Arial, sans-serif;
   font-size: 30px;
-  font-weight: 700;
   color: #FF977C;
   display: flex;
   align-items: center;
@@ -1242,23 +1264,42 @@ bold {
 
 .proxxmu .insights-list {
   display: grid;
-  padding: 30px 0px 10px 25px;
+  padding: 30px 0px 10px 0px;
   grid-template-columns: 5% 85%;
   /* grid-template-rows: repeat(5, 50px); */
   grid-gap: 30px;
   /* grid-column-gap: 20px; */
 }
 
+.proxxmu .research .ca-table {
+  width: 100%;
+}
+
+.proxxmu .content-subheading {
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.proxxmu .aff-diag {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
 .proxxmu .problem-framing .problems-table {
   display: grid;
-  max-width: 1000px;
-  grid-template-columns: 50% 50%;
+  width: 1000px;
+  grid-template-columns: 47% 47%;
   grid-column-gap: 50px;
 }
 
 .proxxmu .problem-framing .problems-table .problems-header {
   font-family: circular-std-bold, Arial, sans-serif;
   color: #FF977C;
+}
+
+.proxxmu .problem-framing .problems-table ul {
+  padding-left: 20px;
 }
 
 .proxxmu .stage-pink {
@@ -1279,4 +1320,96 @@ bold {
 .proxxmu .stage-pink .stage-text {
   color: black;
   padding-top: 20px;
+}
+
+.proxxmu .ideation .storyboards img {
+  width: 800px;
+}
+
+.proxxmu .storyboards.slideshow .carousel {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.proxxmu .ideation .storyboards .carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  color: black;
+}
+
+.proxxmu .personas.slideshow .carousel-indicators {
+  bottom: -50px;
+}
+
+.proxxmu .storyboards.slideshow .carousel-indicators {
+  bottom: 0px;
+}
+
+.proxxmu .ideation .info-arch {
+  width: 90%;
+  display: block;
+  margin: 0px auto;
+}
+
+.proxxmu .ideation .wireframe-system {
+  width: 80%;
+  display: block;
+  margin: 40px auto 0px auto;
+}
+
+.proxxmu .ideation .wireframes {
+  width: 80%;
+  display: block;
+  margin: 40px auto 0px auto;
+}
+
+.proxxmu .reflection .image {
+  width: 60%;
+  display: block;
+  margin: 50px auto 20px auto;
+}
+
+.proxxmu .reflection .img-caption {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: circular-std-book-italic, Arial, sans-serif;
+
+}
+
+.proxxmu .reflection .takeaways, .next-steps {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-gap: 40px;
+}
+
+.proxxmu .reflection .stage-grey {
+  background-color: #F8F8F8;
+  width: 100%;
+  margin-top: 60px;
+  padding: 80px 0px 120px 0px;
+}
+
+.proxxmu .reflection .title {
+  font-family: circular-std-bold, Arial, sans-serif;
+  line-height: 40px;
+}
+
+.proxxmu .reflection .num {
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 45px;
+  color: #FF977C;
+  display: flex;
+  align-items: center;
+}
+
+.proxxmu .reflection .text {
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.proxxmu .reflection .text.first {
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 10px;;
 }

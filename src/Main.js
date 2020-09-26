@@ -48,6 +48,15 @@ class Main extends Component {
           {/* PROJECTS */}
           <div className="container-fluid d-flex justify-content-center px-0">
             <div className="col px-0">
+            <div className="row-md-4">
+                <Project 
+                  image={proxxmu} 
+                  link="/proxxmu"
+                  title="Proxxmu" 
+                  description="Helping neighbors stay connected and dependable" 
+                  color="#FF977C"
+                  index="0" />
+              </div>
               <div className="row-md-4">
                 <Project 
                   image={equalicare} 
@@ -55,18 +64,9 @@ class Main extends Component {
                   title="EqualiCare" 
                   description="Mobile medical application providing universal healthcare for elderly immigrants"
                   color="#6FCAD2"
-                  index="0" />
-              </div>
-              <div className="row-md-4">
-                <Project 
-                  image={proxxmu} 
-                  link="/proxxmu"
-                  title="Proxxmu" 
-                  description="Helping neighbors stay connected and dependable" 
-                  color="#FF977C"
                   index="1" />
               </div>
-              <div className="row-md-4">
+              {/* <div className="row-md-4">
                 <Project 
                   image={recoverycafe} 
                   link="/recoverycafe"
@@ -74,7 +74,7 @@ class Main extends Component {
                   description="Rebrand for non-profit organization"
                   color="#DFBBA6"
                   index="2" />
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
