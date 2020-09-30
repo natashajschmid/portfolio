@@ -24,7 +24,7 @@ import img15 from '../img/equalicare-img15.png';
 import img16 from '../img/equalicare-img16.png';
 import img17 from '../img/equalicare-img17.png';
 import img17b from '../img/equalicare-img17b.png';
-import img18 from '../img/equalicare-img18.png';
+// import img18 from '../img/equalicare-img18.png';
 import img19 from '../img/equalicare-img19.png';
 import img20 from '../img/equalicare-img20.png';
 import img21 from '../img/equalicare-img21.png';
@@ -150,10 +150,10 @@ class EqualiCare extends Component {
             Competitive Analysis <br/> Interviews <br/> Surveys <br/> User Personas
           </div>
           <div className="process-text">
-            Problem Statement <br/> Design Question <br/> Design Requirements
+            Problem Statement <br/> Design Question <br/> Design Goals
           </div>
           <div className="process-text">
-            Considered Solutions <br/> App Usage Timeline <br/> Wireframes
+            Considered Solutions <br/> Wireframes
           </div>
           <div className="process-text">
             Design System <br/> Prototype & Scenarios
@@ -202,7 +202,6 @@ class EqualiCare extends Component {
           <div className="content-subtitle">Surveys</div>
           <div className="content">
             <p>We distributed two separate surveys through Google Forms. One went out to <a target="_blank" href="https://docs.google.com/spreadsheets/d/1fSOU1hi9pGVrxmZKe60zyyt-xsY-xovF_971vLH7xrI/edit?usp=sharing">family translators</a> of elderly immigrants (10 responses) and the other to <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ik19n2RxKE9BqkyaD98q-R89fnpNzUpUpRrlc7hd-wY/edit?usp=sharing">healthcare professionals</a> (13 responses).</p>
-            [INSERT SURVEY QUOTE !!!!!!]
             <div className="survey">
               <div className="survey-icon">
                 <p className="icon-title">Family Translators</p>
@@ -218,7 +217,7 @@ class EqualiCare extends Component {
               </div>
               <div className="survey-insight">
               <p>All participants said that interpreters are important to have as they usually <bold>share the same cultures and language with the patient</bold> and act as a bridge between the doctors and the patients.</p>
-              <p>Interpreters are also great for translating <bold>medical terminology</bold> and to act as an <bold>unbiased voice</bold> when speaking of embarrassing or difficult topics, such as sexuality or death, since they do not have an emotional attachment to the patient that a translating relative may.</p>
+              <p>Interpreters are also great for translating <bold>medical terminology</bold> and to act as an <bold>unbiased voice</bold> when speaking of embarrassing or difficult topics, such as sexuality or death, since they do not have an emotional attachment to the patient that a translating relative may. That said, they add a significant amount of time to appointments and generally do not communicate the patient's emotions.</p>
               </div>
             </div>
           </div>    
@@ -270,7 +269,7 @@ class EqualiCare extends Component {
             </div>
           </div>
           <div className="stage-grey">
-            <div className="content-subtitle">Design Requirements</div>
+            <div className="content-subtitle">Design Goals</div>
             <div className="content stage-text design-reqs">
               <img src={img10} alt="time efficient icon" className="icon" />
               <img src={img11} alt="thorough and honest icon" className="icon" />
@@ -292,7 +291,7 @@ class EqualiCare extends Component {
           <div className="content-title"><span className="number">03</span><span className="header">Ideation</span></div>
             <div className="content-subtitle">Considered Solutions</div>
             <div className="content cons-sol">
-              Based on our user research findings, we began ideating on different possible solutions that address the design requirements. The considered solutions are summarized in the table below.
+              Based on our user research findings, we began ideating on different possible solutions that address the design goals. The considered solutions are summarized in the table below.
               <img src={img14} alt="considered solutions table summary" className="table" />
             </div>
             <div className="stage-teal solution">
@@ -308,50 +307,38 @@ class EqualiCare extends Component {
             </div>
             <div className="content-subtitle">Low Fidelity Wireframes</div>
             <div className="content">
-              Drawing inspiration from the outlined solutions considered, we began early ideation with brainstorming sketches and low fidelity wireframes that address the design requirements. In particular, we kept the unique needs of elderly immigrants in mind while approaching visual design elements. A major part of this was keeping in mind visual/aural disabilities, language differences, and technological literacy. <br/> <br/>
-              <div className="lofi-wireframes">
+              Drawing inspiration from the outlined solutions considered, we began early ideation with brainstorming sketches and low fidelity wireframes that address the design goals. In particular, we kept the unique needs of elderly immigrants in mind while approaching visual design elements. A major part of this was keeping in mind visual/aural disabilities, language differences, and technological literacy. <br/>
+              <div className="slideshow lofi-wireframes">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
                   </ol>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src={img18} class="d-block w-100" alt="..." />
-                      <div class="carousel-caption d-none d-md-block">
-                        <p><bold>Heath Summary (Main Page)</bold></p>
-                        <h5>(1/5)</h5>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
                       <img src={img19} class="d-block w-100" alt="..." />
                       <div class="carousel-caption d-none d-md-block">
-                        <p><bold>Make Appointment</bold></p>
-                        <h5>(2/5)</h5>
+                        <p><bold>Heath Summary (Main Page)</bold></p>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img src={img20} class="d-block w-100" alt="..." />
                       <div class="carousel-caption d-none d-md-block">
-                        <p><bold>Current Care</bold></p>
-                        <h5>(3/5)</h5>
+                        <p><bold>Make Appointment</bold></p>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img src={img21} class="d-block w-100" alt="..." />
                       <div class="carousel-caption d-none d-md-block">
                         <p><bold>Current Care</bold></p>
-                        <h5>(4/5)</h5>
                       </div>
                     </div>
                     <div class="carousel-item">
                       <img src={img22} class="d-block w-100" alt="..." />
                       <div class="carousel-caption d-none d-md-block">
                         <p><bold>Questions/Concerns</bold></p>
-                        <h5>(5/5)</h5>
                       </div>
                     </div>
                   </div>
@@ -366,15 +353,15 @@ class EqualiCare extends Component {
                 </div>
               </div>
             </div>
-            <div className="content-subtitle">Selected Solution [[[change this phrasing???]</div>
+            {/* <div className="content-subtitle">Selected Solution</div> */}
             <div className="content">
               Ultimately, we constructed a solution that incorporates the core aspects of our 4 possible brainstormed solutions, extracting the most important elements of each that would combine for the best overall user experience. This combined solution focuses on increased communication between the patient and healthcare provider, through forms completed in their native language. There is also an emphasis on post-appointment care, through video tutorials and live chat options. <br/>
             </div>
-            <div className="content">
+            {/* <div className="content">
               <div className="content-subtitle">App Usage Timeline</div>
               <p>We aim to provide assistance throughout the entire healthcare process [ADD MORE EXPLANATION HERE]</p>
               <img src={img16} alt="usage timeline graphic" className="timeline"/>
-            </div>
+            </div> */}
         </section>
 
         <section className="design" id="design">
@@ -392,6 +379,11 @@ class EqualiCare extends Component {
                 <p>In deciding our color scheme, we first selected colors from the <a href="https://www.ichs.com/" target="_blank" open>International Community Health Services (ICHS)</a> website because we communicated with them to determine the problems that need to be addressed. Then, we added a few others we felt were necessary to complete the palette. For instance, we used a dark grey for text rather than a harsher black. </p>
                 <p>One thing we considered is that older people need contrast between the text and background. To address this, we incorporated  many different shades of teal and grey, to allow for dark text on a light shade or light text on a dark shade.</p>
               </div>
+            </div>
+            <div className="content">
+              <div className="content-subtitle">App Usage Timeline</div>
+              <p>Our design solution hopes to create a more well-rounded experience for elderly immigrants <italic>throughout their entire healthcare journey</italic>. Interpreters are great to have during appointments at the doctor’s office, however patients should feel well supported and confident in their care whether they are at the clinic, or at home. By incorporating features that address a patient's situation at any point in their healthcare journey, they are able to play a larger role in their healthcare through better comprehension and opportunities to ask questions in their native language. </p>
+              <img src={img16} alt="usage timeline graphic" className="timeline"/>
             </div>
             <div className="content-subtitle">Prototype & Scenarios</div>
             <div className="prototypes">
@@ -441,7 +433,7 @@ class EqualiCare extends Component {
                 <div className="details">
                   <div className="title">Ask Doctor a Question</div>
                   <div className="description">
-                    If, at any point, the patient has a question for a doctor, they have many options to go about obtaining an answer, including sending a translated message, live chat, or calling a healthcare professional who speaks their native language.<br/> <br/>
+                    If, at any point, the patient has a question for a doctor, they have many options to go about obtaining an answer. This includes sending a translated message, live chatting, or calling a healthcare professional who speaks their native language.<br/> <br/>
                     <bold className="pain-points">Pain Points Solved</bold> <br/>
                     <ul>
                       <li><bold>Thorough and honest</bold> communication, from information presented in the patient's native language and the ability to get in contact with a healthcare provider who speaks the same language and shares cultural context.</li>
@@ -511,7 +503,7 @@ class EqualiCare extends Component {
           <Link to="/" className="link link-inactive">All</Link>
           <Link to="/equalicare" className="link link-active">EqualiCare</Link>
           <Link to="/proxxmu" className="link link-inactive">Proxxmu</Link>
-          <Link to="/recoverycafe" className="link link-inactive">Recovery Cafe</Link>
+          {/* <Link to="/recoverycafe" className="link link-inactive">Recovery Cafe</Link> */}
         </div>
       </section>
     );

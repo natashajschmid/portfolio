@@ -10,10 +10,13 @@ import '../App.css';
 import proxxmuHero from '../img/proxxmuCover.png';
 import interviewsum from '../img/proxxmu-interviewsum.png';
 import companal from '../img/proxxmu-companal.png';
+import affdiag from '../img/proxxmu-affdiag.png';
 import persona1 from '../img/proxxmu-persona1.png';
 import persona2 from '../img/proxxmu-persona2.png';
 import persona3 from '../img/proxxmu-persona3.png';
-import affdiag from '../img/proxxmu-affdiag.png';
+import userjourney from '../img/proxxmu-userjourney.png';
+import lightbulb from '../img/proxxmu-lightbulb.png';
+import connecting from '../img/proxxmu-connecting.png';
 import storyboard1 from '../img/proxxmu-storyboard1.png';
 import storyboard2 from '../img/proxxmu-storyboard2.png';
 import storyboard3 from '../img/proxxmu-storyboard3.png';
@@ -44,7 +47,8 @@ class Proxxmu extends Component {
             duration="8 weeks"
             team="Natasha Schmid, Jennifer Lukban, Tianyi Ren"
             role="UX Research, UI/UX Design"
-            description="Proxxmu is a app to help connect neighbors/build community/keep them dependable [CHANGE THIS LATER]."
+            description="Proxxmu is a safe platform, connecting neighbors who need help with those who are willing and able to help others. In doing so, it  builds neighborhood community and fosters the formation of genuine relationships."
+            // "provides a safe platform for neighbors to seek help and build relationships amongst one another. Focused on connecting partners to foster accountability and mutual support. Conducted competitive analysis and user interviews."
           />
         </div>
         <div className="introduction">
@@ -171,7 +175,7 @@ class Proxxmu extends Component {
                 <div className="insight-number">2</div>
                 <div className="insight">Neighbors and a sense of community can be two different things; neighbors are close by proximity, while communities are close people you can rely on in time of need.</div>
                 <div className="insight-number">3</div>
-                <div className="insight">Organized efforts or opportunities to help one another or for community building are uncommon. It is all solely individual efforts (which even then, are not all that frequent). </div>
+                <div className="insight">Organized efforts to help one another or for community building are uncommon in neighborhoods. It is all solely individual efforts (which are also not all that frequent). </div>
                 <div className="insight-number">4</div>
                 <div className="insight"><bold>INSIGHT #4</bold></div>
                 <div className="insight-number">5</div>
@@ -182,6 +186,12 @@ class Proxxmu extends Component {
 
           <div className="content-subtitle">Competitive Analysis</div>
           <div className="content">
+            We researched existing products that serve to connect neighbors, and analyzed them across certain metrics that we determined from patterns across interviews and market research. This revealed the need for:
+            <ul>
+              <li>increased prioritization of accountability.</li>
+              <li>low, medium, and high commitment opportunities, to reach more users who want to get involved.</li>
+              <li>a more balanced emphasis on both community building and providing support. Interviews revealed that people are more likely to help others if they have established rapport, yet no products strongly fulfill <italic>both</italic> of these metrics. </li>
+            </ul>
             <img src={companal} alt="competitive analysis summary chart" className="ca-table" />
           </div>
 
@@ -225,18 +235,25 @@ class Proxxmu extends Component {
           </div>
           <div className="content-subtitle">User Journey Map</div>
           <div className="content">
-            journey map here
+            We mapped out our primary persona Margaret's user journey, pinpointing her emotions based on various events that occur as she seeks help among neighbors. This really helped us get into the mindset of our user to better visualize and understand the frustrations they might experience.
+            <img src={userjourney} alt="margaret's journey map" className="user-journey" />
           </div>
         </section>
 
         <section className="problem-framing" id="problem">
           <div className="content-title"><span className="number" style={{color: this.state.color}}>02</span><span className="header">Problem Framing</span></div>
+          <div className="content">
+            {/* <img src={lightbulb} alt="lightbulb" className="lightbulb" /> */}
+            From the culmination of our research, it became clear that in order to ensure individuals in a neighborhood are getting the help they need, there needs to be a greater sense of accountability. Many existing solutions utilize social media-like feeds or group chats, which has proven to be innefective, as important information can easily get lost or posts can be ignored. Instead, connecting individuals to form partnerships is much more actionable and reliable, and simultaneously fosters the formation of genuine relationships.<br/> <br/>
+            <img src={connecting} alt="connecting individuals is more effective than connecting groups" className="connecting-img" />
+          </div>
           <div className="content-subtitle">Needs to Address</div>
           <div className="content">
-            <p>Using the information gathered from our interviews and competetive analysis, we came up with the following current and long-term needs that exist among potential users.</p>
+            <p>Using the information gathered from our interviews and competetive analysis, we came up with the following current (COVID-19) and long-term needs that exist among potential users.</p>
             <div className="problems-table">
               <div className="problems-header">
-                Current
+                {/* Current */}
+                COVID-19
               </div>
               <div className="problems-header">
                 Long-Term
@@ -269,7 +286,22 @@ class Proxxmu extends Component {
           <div className="stage-pink">
             <div className="content-subtitle">Design Question</div>
             <div className="content stage-text design-question">
-              How might we efficiently and safely connect people within a neighborhood who need help with those who want to help others, while creating a community that can depend on one another?</div>
+            How might we connect individuals within a neighborhood who need help with those who want to help others?
+            </div>
+          </div>
+          {/* <div className="content-subtitle">Design Goals</div> */}
+          <div className="stage-grey">
+            <div className="content">
+              <bold className="content-subtitle">Design Goals</bold>
+              <div className="goals-list">
+                <div className="goal-num">1</div>
+                <div className="goal">Help neighbors feel that they can rely on each other for support when in need</div>
+                <div className="goal-num">2</div>
+                <div className="goal">Build community & foster the formation of genuine relationships</div>
+                <div className="goal-num">3</div>
+                <div className="goal">Alleviate stress among neighbors who need help and their caregivers</div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -321,13 +353,14 @@ class Proxxmu extends Component {
             With the design goals and general user interactions as a guide, we mapped out our possible solution in an information architecture diagram. This helped us to establish a logical app structure and identify core features. <br/> <br/>
             <img src={infoarch} alt="information architecture map" className="info-arch" />
           </div>
-          <div className="content-subtitle">Sketching</div>
+          {/* <div className="content-subtitle">Sketching</div>
           <div className="content">
             We then created <a>paper prototypes</a> to visualize key user tasks.
-          </div>
+          </div> */}
           <div className="content-subtitle">Wireframes</div>
           <div className="content">
-            Using the feedback from usability tests on our initial sketches, we created <a target="_blank" href="https://drive.google.com/file/d/1UDvHQg3qoge4kBkRWixSfG5UuUjgwoP-/view?usp=sharing">annotated wireframes</a> for the full system. In doing so, we also outlined key user scenarios to better visualize the app's user interactions.
+            <p>Using the feedback from usability tests on our initial sketches, we created <a target="_blank" href="https://drive.google.com/file/d/1UDvHQg3qoge4kBkRWixSfG5UuUjgwoP-/view?usp=sharing">annotated wireframes</a> for the full system. In doing so, we also outlined key user scenarios to better visualize the app's user interactions.</p>
+            <italic>Reflection Point: Upon completion of these wireframes, it became clear that they were much closer to mid-fidelity rather than low-fidelity as we originally intended. If we were to go back, we would instead make use of filler content, so that there is less focus on the actual text and more on the layout itself. This would have been more beneficial for our subsequent process of receiving feedback and iterating on our designs. </italic>
             <img src={wireframes} alt="digital wireframes" className="wireframe-system" />
             <img src={wfscenarios} alt="wireframes of key user scenarios" className="wireframes" />
           </div>
@@ -335,6 +368,10 @@ class Proxxmu extends Component {
 
         <section className="design" id="design">
           <div className="content-title"><span className="number" style={{color: this.state.color}}>04</span><span className="header">Design</span></div>
+          <div className="interactive-prototype">
+            {/* <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1);"}} width="400" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fbubnbaqrb2UeSdqLcQABYu%2FProxxmu%3Fnode-id%3D368%253A8677%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe> */}
+            <iframe style={{border: "0px solid rgba(0, 0, 0, 0.1);"}} width="400" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fbubnbaqrb2UeSdqLcQABYu%2FProxxmu%3Fnode-id%3D368%253A8677%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+          </div>
         </section>
 
         <section className="reflection" id="reflection">
@@ -349,13 +386,14 @@ class Proxxmu extends Component {
               </div>
               <div className="num">2</div>
               <div className="text">
-                <bold className="title">Draw clear connections between research and design decisions</bold> <br/>
-                Put description text here .... !!!!!
+                {/* <bold className="title">Draw clear connections between research and design decisions</bold> <br/> */}
+                <bold className="title">Research is SO important</bold> <br/>
+                This probably goes without saying, but the importance of research became very clear since we were addressing what originally felt like such a broad problem space (helping people ... help people). I had an "a-ha" moment during one of my interviews (which ended up lasting upwards of 2 hours), as they were sharing personal stories from their neighborhood experiences. This brought about so many new and intriguing insights that really helped scope our problem space and user group. If I could go back, I would have liked to spend more time in the research phase and conduct more interviews as it felt somewhat rushed since we were following along with class deadlines. 
               </div>
               <div className="num">3</div>
               <div className="text">
                 <bold className="title">Maintain a balance of synchronous and asynchronous work</bold> <br/>
-                Given the unexpected circumstances culminating in a virtual quarter, we completed this entire project remotely. While not being able to interact with one another directly and navigating differing class schedules and timezone differences was certainly challenging, we were able to figure out a comfortable and effective way of doing so. Firstly, it was so important to maintain clear communication regarding overarching goals for each deliverable and asynchronous responsibilities. This made the times we did convene as a group through Zoom productive and extremely  valuable, as it enabled each of us to have a voice in making larger decisions.
+                Given the unexpected circumstances culminating in a virtual quarter, we completed this entire project remotely. While not being able to interact with one another directly and navigating differing class schedules/timezone differences was certainly challenging, we were able to figure out a comfortable and effective way of doing so. Firstly, it was so important to maintain clear communication regarding overarching goals for each deliverable and asynchronous responsibilities. This made the times we did convene as a group through Zoom productive and extremely  valuable, as it enabled each of us to have a voice in making larger decisions.
               </div>
             </div>
           </div>
@@ -392,7 +430,7 @@ class Proxxmu extends Component {
           <Link to="/" className="link link-inactive">All</Link>
           <Link to="/equalicare" className="link link-inactive">EqualiCare</Link>
           <Link to="/proxxmu" className="link link-active">Proxxmu</Link>
-          <Link to="/recoverycafe" className="link link-inactive">Recovery Cafe</Link>
+          {/* <Link to="/recoverycafe" className="link link-inactive">Recovery Cafe</Link> */}
         </div>
 
       </section>  

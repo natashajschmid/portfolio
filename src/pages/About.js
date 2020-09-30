@@ -38,15 +38,17 @@ class About extends Component {
             <div className="about-content">
               <div>
                 Hi, I'm Natasha.<br/><br/><br/>
-                I am a student at the University of Washington, studying Human Centered Design & Engineering. I am passionate about solving problems at the intersection of humans, technology, and ethics.<br/><br/>
+                I am a student at the University of Washington, pursuing a degree in <a target="_blank" href="https://www.hcde.washington.edu/">Human Centered Design & Engineering</a>, with a concentration in Human Computer Interaction. <br/><br/>I am passionate about solving problems at the intersection of humans, technology, and ethics.<br/><br/>
                 </div>
                 <div>
-                  <span className="about-title">Section 1</span><br/>
-                  Fugiat nulla aute est anim ad. Aliquip veniam ullamco pariatur veniam ut proident irure proident sunt. Minim consectetur duis ullamco Lorem sint ipsum elit officia do sunt ut quis.<br/><br/>
+                  {/* <span className="about-title">Section 1</span><br/> */}
+                  {/* advocate for other's stories    
+
+                  Fugiat nulla aute est anim ad. Aliquip veniam ullamco pariatur veniam ut proident irure proident sunt. Minim consectetur duis ullamco Lorem sint ipsum elit officia do sunt ut quis.<br/><br/> */}
                 </div>
                 <div>
-                  <span className="about-title">Section 2</span><br/>
-                  Fugiat nulla aute est anim ad. Aliquip veniam ullamco pariatur veniam ut proident irure proident sunt. Minim consectetur duis ullamco Lorem sint ipsum elit officia do sunt ut quis.<br/><br/><br/>
+                  {/* <span className="about-title">Section 2</span><br/> */}
+                  {/* Fugiat nulla aute est anim ad. Aliquip veniam ullamco pariatur veniam ut proident irure proident sunt. Minim consectetur duis ullamco Lorem sint ipsum elit officia do sunt ut quis.<br/><br/><br/> */}
                 </div>
             </div>
           </div>

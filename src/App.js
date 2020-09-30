@@ -8,8 +8,9 @@ import Main from './Main.js';
 import Work from './pages/Work.js';
 import About from './pages/About.js';
 import Resume from './pages/Resume.js';
-import EqualiCare from './projects/EqualiCare';
 import Proxxmu from './projects/Proxxmu';
+import EqualiCare from './projects/EqualiCare';
+import RecoveryCafe from './projects/RecoveryCafe';
 import Footer from './Footer.js';
 import ProjectNav from './projects/ProjectNav';
 
@@ -41,12 +42,16 @@ class App extends Component {
           component={Resume}
         />
         <Route 
+          path="/proxxmu"
+          component={Proxxmu}
+        />
+        <Route 
           path="/equalicare"
           component={EqualiCare}
         />
         <Route 
-          path="/proxxmu"
-          component={Proxxmu}
+          path="/recoverycafe"
+          component={RecoveryCafe}
         />
         <Footer />
       </div>

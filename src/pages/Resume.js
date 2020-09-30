@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
-import resumepng from '../img/resume-png.png';
-import resumepdf from '../img/Natasha_Schmid_Resume.pdf';
+import resumepng from '../img/NatashaSchmid_Resume_Aut20.png';
+import resumepdf from '../img/NatashaSchmid_Resume_Aut20.pdf';
 
  
 class Resume extends Component {
