@@ -394,11 +394,12 @@ class Proxxmu extends Component {
               <div className="text">
                 <bold className="title">Maintain a balance of synchronous and asynchronous work</bold> <br/>
                 Given the unexpected circumstances culminating in a virtual quarter, we completed this entire project remotely. While not being able to interact with one another directly and navigating differing class schedules/timezone differences was certainly challenging, we were able to figure out a comfortable and effective way of doing so. Firstly, it was so important to maintain clear communication regarding overarching goals for each deliverable and asynchronous responsibilities. This made the times we did convene as a group through Zoom productive and extremely  valuable, as it enabled each of us to have a voice in making larger decisions.
+                <br/><br/><br/><br/><br/>
               </div>
             </div>
           </div>
 
-          <div className="stage-grey">
+          {/* <div className="stage-grey">
             <div className="content-subtitle">Next Steps</div>
             <div className="content">
               <div className="next-steps">
@@ -418,7 +419,7 @@ class Proxxmu extends Component {
           <div className="content">
             <img src={grouppic} alt="team photo via zoom" className="image" />
             <div className="img-caption">Shoutout to my team members, Tianyi and Jennifer!</div>
-          </div>
+          </div> */}
 
         </section>
 
