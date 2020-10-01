@@ -1,7 +1,7 @@
 {
+  "homepage": "https://natashajschmid.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://natashajschmid.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,7 +10,6 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.5.2",
     "framer-motion": "^2.5.1",
-    "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-fullscreen-image": "0.0.3",
@@ -40,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
