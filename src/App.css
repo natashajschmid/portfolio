@@ -123,7 +123,9 @@
 .header .specialty {
   font-size: 22px;
   /* color: #75A6D6; */
-  color: #2C83A8;
+  /* color: #2C83A8; */
+  /* color: #6BA6FF; */
+  color: #4088F4;
   line-height: 36px;
 }
 
@@ -336,8 +338,8 @@
 
 .button-hover-0 {
   color: white !important;
-  background-color: #FF977C !important;
-  border: 2px solid #FF977C !important;
+  background-color: #A2BDBB !important;
+  border: 2px solid #A2BDBB !important;
 }
 
 .button-hover-1 {
@@ -403,6 +405,15 @@
   font-size: 20px;
 }
 
+.about .about-content a {
+  text-decoration: underline;
+  color: grey;
+}
+
+.about .about-content a:hover {
+  color: black;
+}
+
 
 
 /* RESUME PAGE */
@@ -418,7 +429,8 @@
   width: 280px;
   height: 50px;
   /* color: #75A6D6; */
-  color: #2C83A8;
+  /* color: #2C83A8; */
+  color: #4088F4;
   /* font-family: 'Open Sans', 'Arial', sans-serif;
   font-weight: 700; */
   font-family: circular-std-medium, Arial, sans-serif;
@@ -426,7 +438,8 @@
   letter-spacing: 1px;
   background-color: white;
   /* border: 2px solid #75A6D6; */
-  border: 2px solid #2C83A8;
+  /* border: 2px solid #2C83A8; */
+  border: 2px solid #4088F4;
   cursor: pointer;
   border-radius: 38px;
   transition: all 0.4s;
@@ -443,14 +456,18 @@
   color: white;
   /* background-color: #75A6D6;
   border: 2px solid #75A6D6; */
-  background-color: #2C83A8;
-  border: 2px solid #2C83A8;
+  /* background-color: #6BA6FF;
+  border: 2px solid #6BA6FF; */
+  background-color: #4088F4;
+  border: 2px solid #4088F4;
 }
 
 .resume-content img {
   /* max-width: 1000px; */
   /* display: flex; */
-  width: 100%;
+  width: 75%;
+  display: block;
+  margin: 0px auto;
 }
 
 
@@ -599,7 +616,8 @@
 }
 
 .content-title > .number {
-  color: #12B7BB;
+  color: "#000000";
+  /* color: #12B7BB; */
   /* color: #6FCAD2; */
   background-color: white;
   padding-right: 25px;
@@ -1269,7 +1287,7 @@ italic {
 .proxxmu .insights-list .insight-number {
   font-family: circular-std-medium, Arial, sans-serif;
   font-size: 30px;
-  color: #FF977C;
+  color: #A2BDBB;
   display: flex;
   align-items: center;
 }
@@ -1323,19 +1341,19 @@ italic {
 
 .proxxmu .problem-framing .problems-table .problems-header {
   font-family: circular-std-bold, Arial, sans-serif;
-  color: #FF977C;
+  color: #A2BDBB;
 }
 
 .proxxmu .problem-framing .problems-table ul {
   padding-left: 20px;
 }
 
-.proxxmu .stage-pink {
-  background-color: #FF977C;
-  /* background-color: #6FCAD2; */
+.proxxmu .stage-green {
+  /* background-color: #A2BDBB; */
+  background-color: #C5DAC1;
   width: 100%;
   margin-top: 60px;
-  padding: 120px 0px;
+  padding: 100px 0px 120px 0px;
 }
 
 .proxxmu .stage-pink .content-subtitle {
@@ -1366,7 +1384,7 @@ italic {
 .proxxmu .goals-list .goal-num {
   font-family: circular-std-medium, Arial, sans-serif;
   font-size: 30px;
-  color: #FF977C;
+  color: #A2BDBB;
   display: flex;
   align-items: center;
 }
@@ -1413,6 +1431,37 @@ italic {
   margin: 40px auto 0px auto;
 }
 
+/* .proxxmu .design .design-sys {
+  width: 55%;
+  display: block;
+  margin: 0px auto;
+} */
+
+.proxxmu .design .design-sys {
+  display: grid;
+  grid-template-columns: 60% 35%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 50px;
+}
+
+.proxxmu .design .design-sys .image {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.proxxmu .design .design-sys .image-text {
+  max-width: 100%;
+  line-height: 26px;
+  margin-top: 50%;
+}
+
+.proxxmu .design .prototype {
+  width: 100%;
+}
+
 .proxxmu .design .interactive-prototype {
   display: block;
   margin-left: auto;
@@ -1424,7 +1473,8 @@ italic {
 .proxxmu .reflection .image {
   width: 60%;
   display: block;
-  margin: 50px auto 20px auto;
+  /* margin: 50px auto 20px auto; */
+  margin: 0px auto 20px auto;
 }
 
 .proxxmu .reflection .img-caption {
@@ -1434,17 +1484,26 @@ italic {
 
 }
 
-.proxxmu .reflection .takeaways, .next-steps {
+/* when BOTH takeaways & next steps were numbered */
+/* .proxxmu .reflection .takeaways, .next-steps {
   display: grid;
   grid-template-columns: 5% 95%;
   grid-gap: 40px;
+} */
+
+.proxxmu .reflection .takeaways{
+  display: grid;
+  grid-template-columns: 3% 93%;
+  grid-gap: 40px;
 }
 
-.proxxmu .reflection .stage-grey {
+.proxxmu .reflection .stage-grey{
   background-color: #F8F8F8;
   width: 100%;
-  margin-top: 60px;
-  padding: 80px 0px 120px 0px;
+  /* margin-top: 60px; */
+  /* padding: 80px 0px 120px 0px; */
+  padding: 50px 0px 80px 0px;
+  margin-bottom: 60px;
 }
 
 .proxxmu .reflection .title {
@@ -1455,7 +1514,7 @@ italic {
 .proxxmu .reflection .num {
   font-family: circular-std-medium, Arial, sans-serif;
   font-size: 45px;
-  color: #FF977C;
+  color: #A2BDBB;
   display: flex;
   align-items: center;
 }
@@ -1469,4 +1528,95 @@ italic {
   font-family: circular-std-book, Arial, sans-serif;
   font-size: 18px;
   padding-top: 10px;;
+}
+
+
+
+/* PROJECT PAGE - RECOVERY CAFE */
+
+.recovery .research .stage-red {
+  background-color: #BA462C;
+  /* background-color: #DFBBA6; */
+  width: 100%;
+  /* margin-top: 60px; */
+  padding: 80px 0px;
+}
+
+.recovery .research .stage-red .client {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-gap: 6%;
+}
+
+.recovery .research ul {
+  padding-left: 20px;
+}
+
+.recovery .research .stage-title {
+  color: white;
+  font-family: circular-std-black, Arial, sans-serif;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  padding-bottom: 20px;
+  /* padding-top: 80px; */
+}
+
+.recovery .research .stage-red .content{
+  color: white;
+}
+
+.recovery .research .content-subheading {
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+/* .recovery .research .grey {
+  color: #666666;
+} */
+
+.recovery .research .brand-identity {
+  width: 70%;
+  display: block;
+  margin: 0px auto;
+}
+
+.recovery .identity .logo-ideation {
+  width: 50%;
+  display: block;
+  margin: 0px auto 50px auto;
+}
+
+.recovery .identity .logo-iterations {
+  width: 75%;
+  display: block;
+  margin: 30px auto 50px auto;
+}
+
+.recovery .identity .logo {
+  width: 50%;
+  display: block;
+  /* margin: 30px auto 0px auto; */
+  margin-left: 20%;
+  margin-bottom: 30px;
+}
+
+.recovery .identity .iconography {
+  width: 80%;
+  display: block;
+  margin: 50px auto;
+}
+
+.recovery .identity .color-palette {
+  width: 80%;
+  display: block;
+  margin: 50px auto;
+}
+
+.recovery .design .info-arch {
+  width: 85%;
+  display: block;
+  margin: 0px auto;
 }

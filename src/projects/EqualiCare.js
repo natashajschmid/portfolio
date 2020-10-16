@@ -37,6 +37,9 @@ import img27 from '../img/equalicare-img27.png';
 
 
 class EqualiCare extends Component {
+  state = {
+    color: "#12B7BB"
+  }
 
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -161,7 +164,7 @@ class EqualiCare extends Component {
         </div>
 
         <section className="research" id="research">
-          <div className="content-title"><span className="number">01</span><span className="header">Research</span></div>
+          <div className="content-title"><span className="number" style={{color: this.state.color}}>01</span><span className="header">Research</span></div>
           <div className="content-subtitle">Competitive Analysis</div>
           <div className="content">
             We conducted a competitive analysis on existing solutions for improving the healthcare of elderly immigrants in the U.S. This enabled us to understand what is currently working and opportunities for improvement within our problem space. At the conclusion, we determined that all existing solutions are aware that there is a need for improved communication between immigrants and healthcare providers.<br/>
@@ -257,7 +260,7 @@ class EqualiCare extends Component {
         </section>
 
         <section className="problem-framing" id="problem">
-          <div className="content-title"><span className="number">02</span><span className="header">Problem Framing</span></div>
+          <div className="content-title"><span className="number" style={{color: this.state.color}}>02</span><span className="header">Problem Framing</span></div>
           <div className="content-subtitle">Problem Statement</div>
           <div className="content">
           Many elderly immigrants face <bold>language barriers, cultural differences, and technological barriers</bold> that impact their communication with healthcare providers, reducing the quality of their care. Though many healthcare systems have begun implementing translation devices and interpreters, there are still opportunities to allow elderly immigrants to <bold>better understand their health and play a larger role in their healthcare decisions</bold>.
@@ -288,7 +291,7 @@ class EqualiCare extends Component {
         </section>
 
         <section className="ideation" id="ideation">
-          <div className="content-title"><span className="number">03</span><span className="header">Ideation</span></div>
+          <div className="content-title"><span className="number" style={{color: this.state.color}}>03</span><span className="header">Ideation</span></div>
             <div className="content-subtitle">Considered Solutions</div>
             <div className="content cons-sol">
               Based on our user research findings, we began ideating on different possible solutions that address the design goals. The considered solutions are summarized in the table below.
@@ -365,7 +368,7 @@ class EqualiCare extends Component {
         </section>
 
         <section className="design" id="design">
-          <div className="content-title"><span className="number">04</span><span className="header">Design</span></div>
+          <div className="content-title"><span className="number" style={{color: this.state.color}}>04</span><span className="header">Design</span></div>
             {/* <div className="content-subtitle">Design System</div> */}
             <div className="content">
               {/* {insert text about coming up with design system} */}
@@ -447,7 +450,7 @@ class EqualiCare extends Component {
         </section>
 
         <section className="reflection" id="reflection">
-          <div className="content-title"><span className="number">05</span><span className="header">Reflection</span></div>
+          <div className="content-title"><span className="number" style={{color: this.state.color}}>05</span><span className="header">Reflection</span></div>
           <div className="learned row">
             <div className="col-6 image-col ">
               <img src={img27} alt="photo of me & my group" className="image" />
@@ -501,9 +504,9 @@ class EqualiCare extends Component {
         </div>
         <div className="bottom-navigation">
           <Link to="/" className="link link-inactive">All</Link>
-          <Link to="/equalicare" className="link link-active">EqualiCare</Link>
           <Link to="/proxxmu" className="link link-inactive">Proxxmu</Link>
-          {/* <Link to="/recoverycafe" className="link link-inactive">Recovery Cafe</Link> */}
+          <Link to="/equalicare" className="link link-active">EqualiCare</Link>
+          {/* <Link to="/recovery-cafe" className="link link-inactive">Recovery Café</Link> */}
         </div>
       </section>
     );

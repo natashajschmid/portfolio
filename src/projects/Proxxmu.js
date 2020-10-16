@@ -7,7 +7,7 @@ import { ImageGroup, Image } from 'react-fullscreen-image';
 import ProjectNav from './ProjectNav.js';
 import '../App.css';
 
-import proxxmuHero from '../img/proxxmuCover.png';
+import proxxmuHero from '../img/proxxmuHero.png';
 import interviewsum from '../img/proxxmu-interviewsum.png';
 import companal from '../img/proxxmu-companal.png';
 import affdiag from '../img/proxxmu-affdiag.png';
@@ -24,12 +24,20 @@ import infoarch from '../img/proxxmu-infoarch.png';
 import wireframes from '../img/proxxmu-wireframes.png';
 import wfscenarios from '../img/proxxmu-wfscenarios.png';
 // import wfscenarios from '../img/proxxmu-wfscenarios_blank.png';
+import designsys from '../img/proxxmu-designsys.png';
+import hifi1 from '../img/proxxmu-hifi1.png';
+import hifi2 from '../img/proxxmu-hifi2.png';
+import hifi3 from '../img/proxxmu-hifi3.png';
+import hifi4 from '../img/proxxmu-hifi4.png';
+import hifi5 from '../img/proxxmu-hifi5.png';
 import grouppic from '../img/proxxmu-grouppic.png';
 
 
 class Proxxmu extends Component {
   state = {
-    color: "#FF977C"
+    // color: "#FF977C"
+    // color: "#C5DAC1"
+    color: "#A2BDBB"
   }
 
   componentDidMount() {
@@ -47,7 +55,7 @@ class Proxxmu extends Component {
             duration="8 weeks"
             team="Natasha Schmid, Jennifer Lukban, Tianyi Ren"
             role="UX Research, UI/UX Design"
-            description="Proxxmu is a safe platform, connecting neighbors who need help with those who are willing and able to help others. In doing so, it  builds neighborhood community and fosters the formation of genuine relationships."
+            description="Proxxmu is a safe platform, connecting neighbors who need help with those who are willing and able to help others. In doing so, it  builds neighborhood community and foster the formation of genuine relationships."
             // "provides a safe platform for neighbors to seek help and build relationships amongst one another. Focused on connecting partners to foster accountability and mutual support. Conducted competitive analysis and user interviews."
           />
         </div>
@@ -177,9 +185,7 @@ class Proxxmu extends Component {
                 <div className="insight-number">3</div>
                 <div className="insight">Organized efforts to help one another or for community building are uncommon in neighborhoods. It is all solely individual efforts (which are also not all that frequent). </div>
                 <div className="insight-number">4</div>
-                <div className="insight"><bold>INSIGHT #4</bold></div>
-                <div className="insight-number">5</div>
-                <div className="insight">INSIGHT #5.</div>
+                <div className="insight">Having previously established rapport makes it more likely for neighbors to help one another.</div>
               </div>
             </div>
           </div>
@@ -283,7 +289,7 @@ class Proxxmu extends Component {
           <div className="content">
             In the wake of COVID-19, it has become clear that, within a neighborhood, there are many who are in need of help or assistance, and those who can and want to help others. However, it can be difficult for these individuals to connect with each other, leading to needs remaining unmet and/or inefficient and wasteful solutions. <bold>There remains a need to connect these individuals, so that those in need feel that they can rely on their neighbors for support – with or without COVID-19.</bold> This project aims to create a solution for these current and long-term problems, and build community in the process.
           </div>
-          <div className="stage-pink">
+          <div className="stage-green">
             <div className="content-subtitle">Design Question</div>
             <div className="content stage-text design-question">
             How might we connect individuals within a neighborhood who need help with those who want to help others?
@@ -368,10 +374,29 @@ class Proxxmu extends Component {
 
         <section className="design" id="design">
           <div className="content-title"><span className="number" style={{color: this.state.color}}>04</span><span className="header">Design</span></div>
-          <div className="interactive-prototype">
-            {/* <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1);"}} width="400" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fbubnbaqrb2UeSdqLcQABYu%2FProxxmu%3Fnode-id%3D368%253A8677%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe> */}
-            <iframe style={{border: "0px solid rgba(0, 0, 0, 0.1);"}} width="400" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fbubnbaqrb2UeSdqLcQABYu%2FProxxmu%3Fnode-id%3D368%253A8677%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+          <div className="content">
+            {/* <div className="content-subtitle">Design System</div> */}
+            {/* <p>Going into high fidelity screens, we established a cohesive visual design system. We chose Noto Sans for text, as it is very readable and has many different weights. As for color, we created a palette that feels welcoming and portrays communal growth.</p>
+            <img src={designsys} alt="design system" className="design-sys" /> */}
+
+            <div className="design-sys">
+              <img src={designsys} alt="design system" className="image" />
+              <div className="content image-text">
+                <span className="content-subtitle">Design System</span> <br/><br/> Going into high fidelity screens, we established a cohesive visual design system. We chose Noto Sans for text, as it is very readable and provides many different weights. As for color, we created a palette that feels welcoming and embodies communal growth.
+              </div>
+            </div>
+            <div className="content-subtitle">High Fidelity Mockups</div>
+            <img src={hifi1} alt="high fidelity screens: onboarding" className="prototype" />
+            <img src={hifi2} alt="high fidelity screens: home page" className="prototype" />
+            <img src={hifi3} alt="high fidelity screens: request a task" className="prototype" />
+            <img src={hifi4} alt="high fidelity screens: neighbors page + request a partner" className="prototype" />
+            <img src={hifi5} alt="high fidelity screens: message a partner" className="prototype" />
           </div>
+
+          {/* <div className="interactive-prototype">
+            THIS LINE WAS COMMENTED OUT <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1);"}} width="400" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fbubnbaqrb2UeSdqLcQABYu%2FProxxmu%3Fnode-id%3D368%253A8677%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+            <iframe style={{border: "0px solid rgba(0, 0, 0, 0.1);"}} width="400" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fbubnbaqrb2UeSdqLcQABYu%2FProxxmu%3Fnode-id%3D368%253A8677%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
+          </div> */}
         </section>
 
         <section className="reflection" id="reflection">
@@ -394,10 +419,26 @@ class Proxxmu extends Component {
               <div className="text">
                 <bold className="title">Maintain a balance of synchronous and asynchronous work</bold> <br/>
                 Given the unexpected circumstances culminating in a virtual quarter, we completed this entire project remotely. While not being able to interact with one another directly and navigating differing class schedules/timezone differences was certainly challenging, we were able to figure out a comfortable and effective way of doing so. Firstly, it was so important to maintain clear communication regarding overarching goals for each deliverable and asynchronous responsibilities. This made the times we did convene as a group through Zoom productive and extremely  valuable, as it enabled each of us to have a voice in making larger decisions.
-                <br/><br/><br/><br/><br/>
               </div>
+              <br/><br/>
             </div>
           </div>
+
+
+            <div className="stage-grey">
+            <div className="content-subtitle">Next Steps</div>
+            <div className="content">
+              <div className="next-steps">
+                If we had more time, we would pursue the following next steps:
+                <ul>
+                  <li>Perform usability tests and implement changes from the feedback</li>
+                  <li>Refine the visual design for some portions of the app</li>
+                  <li>Conduct a second round of user research (namely, more interviews among a more diverse range of communities) to evaluate if there are additional user needs that should be addressed </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+
 
           {/* <div className="stage-grey">
             <div className="content-subtitle">Next Steps</div>
@@ -415,11 +456,11 @@ class Proxxmu extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="content">
             <img src={grouppic} alt="team photo via zoom" className="image" />
             <div className="img-caption">Shoutout to my team members, Tianyi and Jennifer!</div>
-          </div> */}
+          </div>
 
         </section>
 
@@ -429,9 +470,9 @@ class Proxxmu extends Component {
         </div>
         <div className="bottom-navigation">
           <Link to="/" className="link link-inactive">All</Link>
-          <Link to="/equalicare" className="link link-inactive">EqualiCare</Link>
           <Link to="/proxxmu" className="link link-active">Proxxmu</Link>
-          {/* <Link to="/recoverycafe" className="link link-inactive">Recovery Cafe</Link> */}
+          <Link to="/equalicare" className="link link-inactive">EqualiCare</Link>
+          {/* <Link to="/recovery-cafe" className="link link-inactive">Recovery Café</Link> */}
         </div>
 
       </section>  

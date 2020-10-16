@@ -7,7 +7,8 @@ import Project from './Project';
 
 import cartoonProfile from './img/cartoon-profile.png';
 // import equalicare from './img/equalicare-img01.png';
-import equalicare from './img/equalicare-im.png';
+// import equalicare from './img/equalicare-im.png';
+import equalicare from './img/equalicareCover.png';
 import proxxmu from './img/proxxmuCover.png';
 import recoverycafe from './img/recoverycafeCover.png';
 
@@ -53,8 +54,9 @@ class Main extends Component {
                   image={proxxmu} 
                   link="/proxxmu"
                   title="Proxxmu" 
-                  description="Helping neighbors stay connected and dependable" 
-                  color="#FF977C"
+                  description="Helping neighbors stay connected and dependable when in need" 
+                  // color="#C5DAC1"
+                  color="#A2BDBB"
                   index="0" />
               </div>
               <div className="row-md-4">
@@ -69,8 +71,8 @@ class Main extends Component {
               {/* <div className="row-md-4">
                 <Project 
                   image={recoverycafe} 
-                  link="/recoverycafe"
-                  title="Recovery Cafe" 
+                  link="/recovery-cafe"
+                  title="Recovery Café" 
                   description="Rebrand for non-profit organization"
                   color="#DFBBA6"
                   index="2" />

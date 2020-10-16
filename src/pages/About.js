@@ -37,9 +37,19 @@ class About extends Component {
           <div className="col-6 px-0">
             <div className="about-content">
               <div>
-                Hi, I'm Natasha.<br/><br/><br/>
-                I am a student at the University of Washington, pursuing a degree in <a target="_blank" href="https://www.hcde.washington.edu/">Human Centered Design & Engineering</a>, with a concentration in Human Computer Interaction. <br/><br/>I am passionate about solving problems at the intersection of humans, technology, and ethics.<br/><br/>
+                Hi, I'm Natasha!<br/><br/>
+                <p>I am a junior at the University of Washington majoring in <a target="_blank" href="https://www.hcde.washington.edu/">Human Centered Design & Engineering</a> (HCDE) with a concentration in Human Computer Interaction. I am also pursuing a minor in diversity.</p>
+
+                <p>Coming into college, I wanted to be a Biomedical Engineer, since I thought this was the best way to have a meaningful and direct impact on others' lives. It wasn't until I took an introductory user-centered design course that I found UX design as a means to interact directly with humans and create impactful products that serve diverse communities. </p>
+                
+               <p>As a designer, I strive to create meaningful experiences that advocate for the story of my user. It is always my goal to exercise empathy and compassion to amplify user voices and have a positive impact on peoples' lives. </p>
+
+                <p>When I am not designing, I love to go on hikes (Mt. Rainier on the left!), play water polo, and make all kinds of smoothies.</p>
+{/* 
+                I am an empathetic problem solver, 
+                <p>I am also a course assistant for an introductory user-centered design class at UW. I love being able to educate others about responsible human centered design practices and share my passion for UX.</p> */}
                 </div>
+
                 <div>
                   {/* <span className="about-title">Section 1</span><br/> */}
                   {/* advocate for other's stories    
