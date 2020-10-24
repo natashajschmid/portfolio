@@ -7,7 +7,10 @@ import '../App.css';
 
 import recoverycafeHero from '../img/recoverycafeCover.png';
 import brandidentity from '../img/recovery-brandidentity.png';
+import site from '../img/recovery-site.png';
+import site2 from '../img/recovery-site2.png';
 import logoideation from '../img/recovery-logoideation.png';
+import logoideation2 from '../img/recovery-logoideation2.png';
 import iconography from '../img/recovery-iconography.png';
 import color from '../img/recovery-color.png';
 import color2 from '../img/recovery-color2.png';
@@ -137,7 +140,7 @@ class RecoveryCafe extends Component {
           <div className="process-header"><span className="process-number">03</span>Design</div>
           <div className="process-header"><span className="process-number">04</span>Brand Book</div>
           <div className="process-text">
-            Client Background <br/> Heuristic Evaluation <br/> Brand Audit <br/> Communication Goals
+            Client Background <br/> Brand Audit <br/> Site Audit <br/> Communication Goals
           </div>
           <div className="process-text">
             Logo <br/> Iconography <br/> Color <br/> Typography <br/> Image Treatment
@@ -154,8 +157,18 @@ class RecoveryCafe extends Component {
           <div className="content-title"><span className="number" style={{color: this.state.color}}>01</span><span className="header">Research</span></div>
           <div className="content-subtitle">Client Background</div>
           <div className="content">
-            Recovery Café is a ........ <br/><br/>
+            Recovery Café is a Seattle non-profit that guides suffering individuals toward healing and recovery. The organization's brand is unaligned with their mission and core values, while the website is difficult to navigate.<br/><br/>
           </div>
+
+          <div className="content">
+            <div className="content-subheading">Audience</div>
+            <ul>
+              <li><bold className="grey">Primary:</bold> Individuals traumatized by homelessness, addiction and other mental health challenges</li>
+              <li><bold className="grey">Secondary:</bold> Volunteers, cafe companions, medical case managers, and donors</li>
+            </ul>
+            <br/>
+          </div>
+
           <div className="stage-red">
             <div className="content">
               <div className="client">
@@ -176,18 +189,61 @@ class RecoveryCafe extends Component {
               </div>
             </div>
           </div>
-          <div className="content">
+          {/* <div className="content">
             <br/><br/>
             <div className="content-subheading">Audience</div>
-              <ul>
-                <li><bold className="grey">Primary:</bold> Individuals traumatized by homelessness, addiction and other mental health challenges</li>
-                <li><bold className="grey">Secondary:</bold> Volunteers, cafe companions, medical case managers, and donors</li>
-              </ul>
-          </div>
+            <ul>
+              <li><bold className="grey">Primary:</bold> Individuals traumatized by homelessness, addiction and other mental health challenges</li>
+              <li><bold className="grey">Secondary:</bold> Volunteers, cafe companions, medical case managers, and donors</li>
+            </ul>
+          </div> */}
           
           <div className="content-subtitle">Brand Audit</div>
           <div className="content">
+            Before diving into the redesign, I took a closer look at Recovery Café's current brand identity. Overall, the design language is inconsistent and could be improved to more closely support the organization's mission and values. <br/><br/>
             <img src={brandidentity} alt="recovery café's current brand identity" className="brand-identity" />
+          </div>
+
+          <div className="content-subtitle">Site Audit</div>
+          <div className="content">
+            {/* <img src={site} alt="screenshot of Recovery Café website" className="website" /> */}
+            <img src={site2} alt="screenshot of Recovery Café website" className="website" />
+          </div>
+
+          {/* <div className="stage-grey"> */}
+            {/* <div className="content-subtitle">Key Insights</div>
+            <div className="content">
+              <div className="insights-list">
+                <div className="insight-number">1</div>
+                <div className="insight">Recovery Café .</div>
+                <div className="insight-number">2</div>
+                <div className="insight">It is often <bold>difficult to use video chat</bold> to communicate with interpreters.</div>
+                <div className="insight-number">3</div>
+                <div className="insight">Family members do not prefer to discuss medical issues in detail with their parent, to <bold>prevent them from overthinking</bold>.</div>
+                <div className="insight-number">4</div>
+                <div className="insight">Waiting for an interpreter can <bold>take up a lot of time</bold> for the healthcare provider.</div>
+                <div className="insight-number">5</div>
+                <div className="insight">Crucial medical information can be <bold>lost in translation</bold>.</div>
+              </div>
+            </div> */}
+          {/* </div> */}
+
+          <div className="stage-grey">
+            <div className="content-subtitle">Communication Goals</div>
+            <div className="content">
+              Based on my client research, I outlined three main communicataion goals that guided the rest of my re-brand:
+              <div className="insights-list">
+                <div className="insight-number">1</div>
+                <div className="insight"><bold>Love</bold>
+                  <br/>Ensure that all members feel loved and supported in their road to recovery.</div>
+                <div className="insight-number">2</div>
+                <div className="insight"><bold>Healing</bold> 
+                  <br/>Embrace the healing process, and connect individuals with the resources they need to achieve this.</div>
+                <div className="insight-number">3</div>
+                <div className="insight"><bold>Community</bold>
+                  <br/>Foster a community that welcomes individuals from all backgrounds.</div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -196,17 +252,19 @@ class RecoveryCafe extends Component {
           <div className="content-subtitle">Logo</div>
           <div className="content">
             <bold className="content-subheading">Ideation</bold>
-            <p>INSERT DESCRIPTION TEXT HERE</p>
-            <img src={logoideation} alt="ideation sketches for logo" className="logo-ideation" />
-            <p>After recieving peer feedback..... [finish this]</p>
-            <img src={logos} alt="3 mid-fidelity logo iterations" className="logo-iterations" />
-            <p>Final logo design explanation</p>
+            <p>I started out with some sketching to ideate different ways that I could combine all three communication goals in a new logo. Then, I transformed 3 of them into low-fidelity digital versions, which I received feedback on from my peers.</p>
+            <img src={logoideation2} alt="ideation sketches for logo" className="logo-ideation" />
+            {/* <p>Then, I transformed 3 of these sketches into low-fidelity digital versions. </p>
+            <img src={logos} alt="3 mid-fidelity logo iterations" className="logo-iterations" /> */}
+            
+            <bold className="content-subheading">Final Logo</bold>
+            <p>I converged on the following final logo design, which incorporates all 3 communication goals.</p>
             <img src={logo} alt="final logo design" className="logo" />
 
           </div>
           <div className="content-subtitle">Iconography</div>
           <div className="content">
-            <p>I designed 4 icons, each representing an important call to action from the website. They maintain the repetition of hearts to mirror the values of love and support reflected in the logo.</p>
+            <p>I designed 4 cohesive icons, each representing an important call to action from the website. They maintain the repetition of hearts to mirror the values of love and support reflected in the logo and Recovery Café's mission.</p>
             <img src={iconography} alt="4 icons used in the app" className="iconography" />
           </div>
           <div className="content-subtitle">Color</div>

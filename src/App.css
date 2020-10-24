@@ -1580,11 +1580,40 @@ italic {
 .recovery .research .brand-identity {
   width: 70%;
   display: block;
-  margin: 0px auto;
+  margin: 0px auto 50px auto;
+}
+
+.recovery .research .website {
+  width: 90%;
+  display: block;
+  margin: 20px auto 60px auto;
+}
+
+.recovery .research .stage-grey {
+  background-color: #F8F8F8;
+  width: 100%;
+  padding: 40px 0px 60px 0px;
+}
+
+.recovery .insights-list .insight-number {
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 30px;
+  color: #BA462C;
+  display: flex;
+  align-items: center;
+}
+
+.recovery .insights-list {
+  display: grid;
+  padding: 30px 0px 10px 25px;
+  grid-template-columns: 5% 85%;
+  /* grid-template-rows: repeat(5, 50px); */
+  grid-gap: 30px;
+  /* grid-column-gap: 20px; */
 }
 
 .recovery .identity .logo-ideation {
-  width: 50%;
+  width: 60%;
   display: block;
   margin: 0px auto 50px auto;
 }
