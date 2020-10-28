@@ -49,10 +49,10 @@ class App extends Component {
           path="/equalicare"
           component={EqualiCare}
         />
-        {/* <Route 
+        <Route 
           path="/recovery-cafe"
           component={RecoveryCafe}
-        /> */}
+        />
         <Footer />
       </div>
 

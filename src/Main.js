@@ -8,9 +8,12 @@ import Project from './Project';
 import cartoonProfile from './img/cartoon-profile.png';
 // import equalicare from './img/equalicare-img01.png';
 // import equalicare from './img/equalicare-im.png';
-import equalicare from './img/equalicareCover.png';
-import proxxmu from './img/proxxmuCover.png';
-import recoverycafe from './img/recoverycafeCover.png';
+import equalicare from './img/equalicare-cover.png';
+import proxxmu from './img/proxxmu-cover.png';
+import recovery from './img/recovery-cover.png';
+import recovery2 from './img/recovery-cover2.png';
+import recovery3 from './img/recovery-cover3.png';
+
 
 class Main extends Component {
   state = {
@@ -68,15 +71,15 @@ class Main extends Component {
                   color="#6FCAD2"
                   index="1" />
               </div>
-              {/* <div className="row-md-4">
+              <div className="row-md-4">
                 <Project 
-                  image={recoverycafe} 
+                  image={recovery} 
                   link="/recovery-cafe"
                   title="Recovery Café" 
-                  description="Rebrand for non-profit organization"
+                  description="Rebrand for Seattle non-profit organization"
                   color="#DFBBA6"
                   index="2" />
-              </div> */}
+              </div>
             </div>
           </div>
         </section>

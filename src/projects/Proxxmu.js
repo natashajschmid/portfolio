@@ -7,7 +7,7 @@ import { ImageGroup, Image } from 'react-fullscreen-image';
 import ProjectNav from './ProjectNav.js';
 import '../App.css';
 
-import proxxmuHero from '../img/proxxmuHero.png';
+import hero from '../img/proxxmu-hero.png';
 import interviewsum from '../img/proxxmu-interviewsum.png';
 import companal from '../img/proxxmu-companal.png';
 import affdiag from '../img/proxxmu-affdiag.png';
@@ -49,7 +49,7 @@ class Proxxmu extends Component {
       <section className="project-content proxxmu">
         <div className="cover" id="top">
           <ProjectNav
-            hero={proxxmuHero}
+            hero={hero}
             title="Proxxmu"
             date="Spring 2020"
             duration="8 weeks"
@@ -424,8 +424,7 @@ class Proxxmu extends Component {
             </div>
           </div>
 
-
-            <div className="stage-grey">
+          <div className="stage-grey">
             <div className="content-subtitle">Next Steps</div>
             <div className="content">
               <div className="next-steps">
@@ -437,8 +436,7 @@ class Proxxmu extends Component {
                 </ul>
               </div>
             </div>
-            </div>
-
+          </div>
 
           {/* <div className="stage-grey">
             <div className="content-subtitle">Next Steps</div>
@@ -472,7 +470,7 @@ class Proxxmu extends Component {
           <Link to="/" className="link link-inactive">All</Link>
           <Link to="/proxxmu" className="link link-active">Proxxmu</Link>
           <Link to="/equalicare" className="link link-inactive">EqualiCare</Link>
-          {/* <Link to="/recovery-cafe" className="link link-inactive">Recovery Café</Link> */}
+          <Link to="/recovery-cafe" className="link link-inactive">Recovery Café</Link>
         </div>
 
       </section>  

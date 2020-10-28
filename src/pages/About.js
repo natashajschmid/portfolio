@@ -42,7 +42,7 @@ class About extends Component {
 
                 <p>Coming into college, I wanted to be a Biomedical Engineer, since I thought this was the best way to have a meaningful and direct impact on others' lives. It wasn't until I took an introductory user-centered design course that I found UX design as a means to interact directly with humans and create impactful products that serve diverse communities. </p>
                 
-               <p>As a designer, I strive to create meaningful experiences that advocate for the story of my user. It is always my goal to exercise empathy and compassion to amplify user voices and have a positive impact on peoples' lives. </p>
+               <p>As a designer, I strive to create meaningful experiences that advocate for the story of my user. It is always my goal to exercise empathy and compassion to amplify user voices and have a positive impact on people's lives. </p>
 
                 <p>When I am not designing, I love to go on hikes (Mt. Rainier on the left!), play water polo, and make all kinds of smoothies.</p>
 {/* 

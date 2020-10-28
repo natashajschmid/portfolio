@@ -858,6 +858,49 @@ italic {
 }
 
 
+/* Reflection Template */
+
+.reflection .takeaways{
+  display: grid;
+  grid-template-columns: 3% 93%;
+  grid-gap: 40px;
+}
+
+.reflection .stage-grey {
+  background-color: #F8F8F8;
+  width: 100%;
+  /* margin-top: 60px; */
+  /* padding: 80px 0px 120px 0px; */
+  padding: 50px 0px 30px 0px;
+  margin-bottom: 60px;
+}
+
+.reflection .title {
+  font-family: circular-std-bold, Arial, sans-serif;
+  line-height: 40px;
+}
+
+.reflection .num {
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 45px;
+  color: #A2BDBB;
+  display: flex;
+  align-items: center;
+}
+
+.reflection .text {
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.reflection .text.first {
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 10px;;
+}
+
+
+
 /* PROJECT PAGE - EQUALICARE */
 
 /* .equalicare .navigation-sub {
@@ -1629,11 +1672,17 @@ italic {
   display: block;
   /* margin: 30px auto 0px auto; */
   margin-left: 20%;
-  margin-bottom: 30px;
+}
+
+.recovery .identity .icon-ideation {
+  width: 80%;
+  display: block;
+  margin: 0px auto 25px auto;
 }
 
 .recovery .identity .iconography {
-  width: 80%;
+  /* width: 80%; */
+  width: 95%;
   display: block;
   margin: 50px auto;
 }
@@ -1644,8 +1693,81 @@ italic {
   margin: 50px auto;
 }
 
+/* .recovery .identity .typography {
+  width: 70%;
+  display: block;
+  margin: 50px auto;
+} */
+
+.recovery .identity .typography {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 60px;
+}
+
+.recovery .identity .typography .image {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.recovery .identity .typography .image-text {
+  max-width: 100%;
+  line-height: 26px;
+}
+
 .recovery .design .info-arch {
   width: 85%;
   display: block;
   margin: 0px auto;
 }
+
+.recovery .design .prototype-link {
+  text-decoration: none;
+  color: #BA463C;
+  /* color: grey; */
+}
+
+.recovery .design .prototype-link:hover {
+  text-decoration: underline;
+  color: #BA463C;
+}
+
+.recovery .design .interactive-prototype {
+  display: block;
+  margin-left: 30%;
+  /* margin: 0px auto; */
+}
+
+.recovery .book .content-title.remove-padding {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.recovery .brandbook.slideshow .carousel {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.recovery .reflection .num {
+  font-family: circular-std-medium, Arial, sans-serif;
+  font-size: 45px;
+  color: #BA463C;
+  display: flex;
+  align-items: center;
+}
+
+.recovery .reflection .stage-grey {
+  /* background-color: #F8F8F8;
+  width: 100%; */
+  padding: 30px 0px 0px 0px;
+  margin-bottom: 20px;
+}
+
+.recovery .reflection .next-steps {
+  margin-bottom: 70px;
+}
+

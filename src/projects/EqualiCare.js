@@ -506,7 +506,7 @@ class EqualiCare extends Component {
           <Link to="/" className="link link-inactive">All</Link>
           <Link to="/proxxmu" className="link link-inactive">Proxxmu</Link>
           <Link to="/equalicare" className="link link-active">EqualiCare</Link>
-          {/* <Link to="/recovery-cafe" className="link link-inactive">Recovery Café</Link> */}
+          <Link to="/recovery-cafe" className="link link-inactive">Recovery Café</Link>
         </div>
       </section>
     );
