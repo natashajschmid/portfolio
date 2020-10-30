@@ -486,6 +486,7 @@
 }
 
 .project-info-container {
+  /* display: grid; */
   width: 100%;
   padding-top: 65px;
   padding-bottom: 80px;
@@ -493,65 +494,65 @@
 }
 
 .project-info {
-  /* TAG: margins */
-  /* font-family: 'Open Sans', 'Arial', sans-serif; */
   font-family: circular-std-book, Arial, sans-serif;
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-template-columns: 7fr 1fr 4fr; 
   top: -106px;
-  /* z-index: 2; */
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
 }
 
-.project-info .project-title {
+.project-title {
   font-family: circular-std-bold, Arial, sans-serif;
   /* font-weight: 700; */
   font-size: 40px;
   color: black;
   line-height: 46px;
   margin-top: 12px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  grid-column: 1 / 4;
+  grid-row: 1;
 }
 
-.project-details {
-  font-size: 16px;
-  /* color: #6E6C79; */
-  line-height: 26px;
-  /* display: flex;
-  flex-wrap: wrap; */
-  padding-top: 10px;
-  display: inline-block;
+.project-description {
+  grid-column: 1;
+  grid-row: 2 / 6;
+  line-height: 36px;
 }
 
-.project-details-title {
-  /* font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 600; */
+.project-info .title {
   font-family: circular-std-medium, Arial, sans-serif;
   font-size: 18px;
-  line-height: 36px;
 }
 
-.project-details .hide {
-  visibility: hidden;
-}
-
-.project-details-text {
-  /* font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 400; */
+.project-info .text {
   font-family: circular-std-book, Arial, sans-serif;
   font-size: 18px;
-  padding-left: 30px;
-  /* position: absolute; */
-  /* margin-top: 40px; */
-  line-height: 36px;
 }
 
-.project-details-description {
-  font-size: 18px;
-  line-height: 36px;
-  /* TAG: ProjectNav spacing issues */
-  padding-right: 40px;
+.date {
+  grid-column: 2;
+  grid-row: 2;
 }
+
+.duration {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.time {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.role {
+  grid-column: 2;
+  grid-row: 5;
+}
+
 
 .nav-scroll {
   position: sticky;
@@ -1275,6 +1276,7 @@ italic {
   background-color: #F8F8F8;
   width: 100%;
   margin-top: 60px;
+  margin-bottom: 0px;
   padding: 80px 0px 120px 0px;
 }
 
