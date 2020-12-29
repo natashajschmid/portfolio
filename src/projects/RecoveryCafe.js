@@ -146,6 +146,22 @@ class RecoveryCafe extends Component {
           </li>
         </ul>
 
+        {/* <div>
+          <br/>
+          <a href="#design" class="final-product-link">
+            View Final Product <span class="text-span-28"> ↓ <br/> &zwj;</span>
+          </a>
+            <input type="button" onClick="document.getElementById('design').scrollIntoView();" />
+        </div> */}
+
+        {/* <a href="#down">Click Here to Smoothly Scroll Down</a>
+        <div id="down">
+          <h1>You are down!</h1>
+        </div> */}
+
+
+
+
         <div className="other-title">Process</div>
         <div className="content process">
           <div className="process-header"><span className="process-number">01</span>Research</div>
@@ -425,6 +441,7 @@ class RecoveryCafe extends Component {
           <Link to="/proxxmu" className="link link-inactive">Proxxmu</Link>
           <Link to="/equalicare" className="link link-inactive">EqualiCare</Link>
           <Link to="/recovery-cafe" className="link link-active">Recovery Café</Link>
+          <Link to="/extra-works" className="link link-inactive">Extra Works</Link>
         </div>
       </section>
     );

@@ -354,6 +354,12 @@
   border: 2px solid #DFBBA6 !important;
 }
 
+.button-hover-3 {
+  color: white !important;
+  background-color: #4088F4 !important;
+  border: 2px solid #4088F4 !important;
+}
+
 .overflow {
   overflow: hidden;
 }
@@ -566,7 +572,7 @@
   list-style: none;
   padding-inline-start: 0px;
   justify-content: center;
-  /* box-shadow: 0 0 6px 0 rgba(0,0,0,.7); */
+  /* box-shadow: 0 6px 0 rgba(0,0,0,.7); */
   box-shadow: 0 6px 6px -6px rgba(0,0,0,.4);
 }
 
@@ -1771,5 +1777,83 @@ italic {
 
 .recovery .reflection .next-steps {
   margin-bottom: 70px;
+}
+
+
+
+/* EXTRA WORKS */
+.extra-works .extra-page-title {
+  font-family: circular-std-bold, Arial, sans-serif;
+  font-size: 40px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-top: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.extra-works .extra-page-subtitle {
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 20px;
+  /* padding-bottom: 50px; */
+  text-align: center;
+}
+
+.extra-works .extra-title {
+  font-family: circular-std-bold, Arial, sans-serif;
+  font-size: 32px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 50px; */
+  padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.extra-works .extra-text {
+  /* font-family: circular-std-book-italic, Arial, sans-serif; */
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.extra-works .medpad .extra-title {
+  color: #7D48F6;
+}
+
+.extra-works .medpad .prompt {
+  font-family: circular-std-book-italic, Arial, sans-serif;
+}
+
+.extra-works .airquality .extra-title {
+  color: #88B7E2;
+}
+
+.extra-works .airquality .air-video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  margin: 20px 0px;
+}
+.extra-works .airquality .air-video-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.extra-works .amazonfresh .extra-title {
+  color: #89C440;
+}
+
+.extra-works .amazonfresh .fresh-pres {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 

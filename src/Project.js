@@ -47,7 +47,7 @@ class Project extends Component {
                   <a href="#" className="view-btn view-button" style=
                     {{color:this.state.color,
                     borderColor: this.state.color}} onMouseOver={()=>this.hoverEvent(this.props.index)} onMouseOut={()=>this.cancelHover(this.props.index)}>
-                    View Case Study
+                    {/* View Case Study */} {this.props.button}
                   </a>
                   {/* <Link to="/equalicare" className="btn btn-secondary">View Case Study</Link> */}
                   <hr className="card-line card-line-bottom" style={{background: this.state.color}}/>

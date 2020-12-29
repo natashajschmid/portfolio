@@ -11,6 +11,7 @@ import Resume from './pages/Resume.js';
 import Proxxmu from './projects/Proxxmu';
 import EqualiCare from './projects/EqualiCare';
 import RecoveryCafe from './projects/RecoveryCafe';
+import ExtraWorks from './projects/ExtraWorks';
 import Footer from './Footer.js';
 import ProjectNav from './projects/ProjectNav';
 
@@ -52,6 +53,10 @@ class App extends Component {
         <Route 
           path="/recovery-cafe"
           component={RecoveryCafe}
+        />
+        <Route
+          path="/extra-works"
+          component={ExtraWorks}
         />
         <Footer />
       </div>

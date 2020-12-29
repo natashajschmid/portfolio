@@ -28,7 +28,14 @@ class ProjectNav extends Component {
       <div className="project-info-container">
         <div className="content project-info">
           <div className="project-title">{this.props.title}</div>
-          <div className="project-description">{this.props.description}</div>
+          <div className="project-description">{this.props.description}
+            {/* <br/>
+            <a href="#design" class="final-product-link">
+              View Final Product <span class="text-span-28"> ↓ <br/> &zwj;</span>
+            </a> */}
+            {/* <input type="button" onClick="document.getElementById('design').scrollIntoView();" /> */}
+
+          </div>
           <div className="title date">Date</div>
           <div className="text">{this.props.date}</div>
           <div className="title duration">Duration</div>
@@ -46,3 +53,14 @@ class ProjectNav extends Component {
 }
 
 export default ProjectNav;
+
+
+
+
+// .link-2 {
+//   box-shadow: none;
+//   font-family: proxima-nova, sans-serif;
+//   color: #3da2ff;
+//   font-size: 18px;
+//   font-weight: 500;
+// }

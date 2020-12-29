@@ -11,6 +11,7 @@ import cartoonProfile from './img/cartoon-profile.png';
 import equalicare from './img/equalicare-cover.png';
 import proxxmu from './img/proxxmu-cover.png';
 import recovery from './img/recovery-cover.png';
+import extraworks from './img/extraworks-cover.png';
 import recovery2 from './img/recovery-cover2.png';
 import recovery3 from './img/recovery-cover3.png';
 
@@ -60,6 +61,7 @@ class Main extends Component {
                   description="Helping neighbors stay connected and dependable when in need" 
                   // color="#C5DAC1"
                   color="#A2BDBB"
+                  button="View Case Study"
                   index="0" />
               </div>
               <div className="row-md-4">
@@ -69,6 +71,7 @@ class Main extends Component {
                   title="EqualiCare" 
                   description="Mobile medical application providing universal healthcare for elderly immigrants"
                   color="#6FCAD2"
+                  button="View Case Study"
                   index="1" />
               </div>
               <div className="row-md-4">
@@ -78,7 +81,18 @@ class Main extends Component {
                   title="Recovery Café" 
                   description="Rebrand for Seattle non-profit organization"
                   color="#DFBBA6"
+                  button="View Case Study"
                   index="2" />
+              </div>
+              <div className="row-md-4">
+                <Project 
+                  image={extraworks} 
+                  link="/extra-works"
+                  title="Extra Works" 
+                  description="A growing collection of side projects I have worked on!"
+                  color="#4088F4"
+                  button="View Work"
+                  index="3" />
               </div>
             </div>
           </div>

@@ -471,6 +471,7 @@ class Proxxmu extends Component {
           <Link to="/proxxmu" className="link link-active">Proxxmu</Link>
           <Link to="/equalicare" className="link link-inactive">EqualiCare</Link>
           <Link to="/recovery-cafe" className="link link-inactive">Recovery Café</Link>
+          <Link to="/extra-works" className="link link-inactive">Extra Works</Link>
         </div>
 
       </section>  
