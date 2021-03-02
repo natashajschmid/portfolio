@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e9b62c918ba2c026f435ef0078c5c41",
+    "revision": "642cb35a712fab65a3b9af4df8b39c89",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.d5ada0f9.chunk.css"
   },
   {
-    "revision": "720312efe9aed9e5c3e3",
+    "revision": "4612fb0f9bf4f4ed48ab",
     "url": "/static/css/main.7c14d1a3.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.96c6b298.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "720312efe9aed9e5c3e3",
-    "url": "/static/js/main.ab5e9553.chunk.js"
+    "revision": "4612fb0f9bf4f4ed48ab",
+    "url": "/static/js/main.75efefe3.chunk.js"
   },
   {
     "revision": "4f2b1704eab49d50853b",
@@ -68,12 +68,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/CircularStd-MediumItalic.eddb7021.woff"
   },
   {
-    "revision": "c03667f3b8bb4c502867d04c6a5e772a",
-    "url": "/static/media/NatashaSchmid_Resume_Aut20.c03667f3.pdf"
+    "revision": "2684be509ace298fa6f050dd0bfc1f4b",
+    "url": "/static/media/NatashaSchmid_Resume_Win20.2684be50.png"
   },
   {
-    "revision": "c3bc6e2be1e38eefba0b8df0164e984d",
-    "url": "/static/media/NatashaSchmid_Resume_Aut20.c3bc6e2b.png"
+    "revision": "6866d9a21f8df7b6f061a8d0b7d7a969",
+    "url": "/static/media/NatashaSchmid_Resume_Win20.6866d9a2.pdf"
   },
   {
     "revision": "38568c849ff0ec718586622b78079f64",
