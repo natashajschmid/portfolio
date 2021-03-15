@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap');
 /* font-family: 'Playfair Display', serif; */
 
-/* Definte Custom Fonts */
+/* Define Custom Fonts */
 @font-face {
   font-family: 'circular-std-black';
   src: url('./font/CircularStd-Black.woff') format('woff');
@@ -601,6 +601,7 @@
   font-family: circular-std-bold, Arial, sans-serif;
   font-size: 40px;
   width: 1000px;
+  /* max-width: 1000px; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -663,19 +664,22 @@
   color: #666666;
 }
 
-/* .stage-grey {
-  color: #3D3D3D;
-} */
-
-.content {
-  /* font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 400; */
+/* OLD CONTENT */
+/* .content {
   font-family: circular-std-book, Arial, sans-serif;
-  /* font-size: 22px; */
-  /* line-height: 36px; */
   font-size: 18px;
   line-height: 26px;
   width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.content {
+  font-family: circular-std-book, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  width: 1000px;
+  /* max-width: 1000px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -1385,10 +1389,19 @@ italic {
 
 .proxxmu .problem-framing .problems-table {
   display: grid;
-  width: 1000px;
+  max-width: 1000px;
   grid-template-columns: 47% 47%;
   grid-column-gap: 50px;
 }
+
+/* @media only screen and (max-width: 768px) {
+  .proxxmu .problem-framing .problems-table {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 50px;
+  }
+} */
 
 .proxxmu .problem-framing .problems-table .problems-header {
   font-family: circular-std-bold, Arial, sans-serif;
@@ -1856,4 +1869,11 @@ italic {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
+
+
+
+
+
 
